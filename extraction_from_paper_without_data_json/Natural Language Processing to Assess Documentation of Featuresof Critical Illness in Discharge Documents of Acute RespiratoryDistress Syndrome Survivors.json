@@ -1,0 +1,44 @@
+{
+  "Entities": [
+    {
+      "Name": "ARDS",
+      "Definition": "Acute Respiratory Distress Syndrome identified in discharge documents based on specific criteria.",
+      "Sample Data": {
+        "Sentence": "ARDS was identified in only 111 of the 815 discharge documents analyzed.",
+        "Annotated": "Presence of ARDS"
+      }
+    },
+    {
+      "Name": "Mechanical Ventilation",
+      "Definition": "The use of mechanical ventilation as recorded in the discharge summaries.",
+      "Sample Data": {
+        "Sentence": "Mechanical ventilation was documented in 770 out of 815 documents.",
+        "Annotated": "Mechanical Ventilation"
+      }
+    },
+    {
+      "Name": "ICU Admission",
+      "Definition": "Records of patient admissions to the Intensive Care Unit.",
+      "Sample Data": {
+        "Sentence": "ICU admission was noted in 693 documents.",
+        "Annotated": "ICU Admission"
+      }
+    },
+    {
+      "Name": "PICS Symptoms",
+      "Definition": "Documentation of symptoms related to Post-Intensive Care Syndrome.",
+      "Sample Data": {
+        "Sentence": "Symptoms or recommendations related to PICS were included in 306 documents.",
+        "Annotated": "PICS Symptoms"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "UPHS ARDS Patient Discharge Documents",
+    "Details": "Dataset includes 815 discharge documents from the University of Pennsylvania Health System, analyzed to assess the documentation of critical illness features."
+  },
+  "Annotation Guidelines": {
+    "Description": "Used a keyword-based classifier to categorize discharge documents by the presence of terms from four groups of keywords related to critical illness. Manual chart review was used to validate the accuracy of the classifier.",
+    "Supplement Link": "http://www.atsjournals.org/doi/suppl/10.1513/AnnalsATS.201602-131OC/suppl_file/disclosures.pdf"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "Entities": [
+    {
+      "Name": "Assertion",
+      "Definition": "The status of the bone fracture (positive, negative, uncertain, ignored).",
+      "Sample Data": "\"There is [not/possibly] a fracture...\""
+    },
+    {
+      "Name": "Type",
+      "Definition": "Type of bone fracture described in the report.",
+      "Sample Data": "\"...a [transverse] fracture...\""
+    },
+    {
+      "Name": "Bone",
+      "Definition": "The specific bone that is fractured.",
+      "Sample Data": "\"...of the [femur] bone.\""
+    },
+    {
+      "Name": "Bone Part",
+      "Definition": "Specific part of the bone where the fracture occurs.",
+      "Sample Data": "\"...the upper [part] of the femur.\""
+    }
+  ],
+  "Dataset": {
+    "Name": "Bone X-ray Radiology Reports",
+    "Details": "13,712 reports from the UK, annotated for bone fracture status, type, and location, with a focus on ensuring no study overlaps between training, validation, and test sets."
+  },
+  "Annotation Guidelines": {
+    "Link": "Not provided in the document; guidelines appear to be internal to the research group."
+  }
+}

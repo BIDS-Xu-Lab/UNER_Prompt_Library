@@ -1,0 +1,46 @@
+{
+  "Entities": [
+    {
+      "Name": "Problem",
+      "Definition": "Medical issues or conditions relevant to Alzheimer’s Disease clinical trials.",
+      "Sample Data": "Examples of 'Problem' entities include symptoms or diagnoses like 'memory loss' or 'cognitive decline'."
+    },
+    {
+      "Name": "Medication",
+      "Definition": "Drugs prescribed or taken by patients in the context of Alzheimer’s Disease.",
+      "Sample Data": "References to medications such as 'Donepezil' or 'Rivastigmine'."
+    },
+    {
+      "Name": "Lab",
+      "Definition": "Laboratory tests relevant to Alzheimer’s Disease research.",
+      "Sample Data": "Mentions of specific lab tests like 'blood glucose level' or 'cholesterol tests'."
+    },
+    {
+      "Name": "Rating Criteria",
+      "Definition": "Criteria used to assess the stage or severity of Alzheimer’s Disease.",
+      "Sample Data": "Use of scales like 'MMSE score' or 'ADAS-cog'."
+    },
+    {
+      "Name": "Social Determinant Health",
+      "Definition": "Social and environmental factors that influence Alzheimer’s Disease outcomes.",
+      "Sample Data": "Entities such as 'living condition', 'caregiver availability', or 'socioeconomic status'."
+    },
+    {
+      "Name": "Procedure",
+      "Definition": "Medical procedures relevant to the diagnosis or treatment of Alzheimer’s Disease.",
+      "Sample Data": "Procedures like 'neuroimaging' or 'spinal tap'."
+    },
+    {
+      "Name": "Fertilize",
+      "Definition": "This seems to be a misclassification or error in the dataset as it is not relevant to the context of Alzheimer’s Disease.",
+      "Sample Data": "No applicable sample data provided due to possible misclassification."
+    }
+  ],
+  "Dataset": {
+    "Name": "AD Clinical Trials from ClinicalTrials.gov",
+    "Details": "The dataset consists of eligibility criteria text extracted from 1508 Alzheimer’s Disease clinical trials listed on ClinicalTrials.gov."
+  },
+  "Annotation Guidelines": {
+    "Link": "The guidelines are inferred to be detailed within the document but no external link or explicit guideline document is provided. The NER and NEN processes are described in terms of methodology and tools used such as CLAMP and SapBERT."
+  }
+}

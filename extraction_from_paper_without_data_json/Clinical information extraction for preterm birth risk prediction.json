@@ -1,0 +1,43 @@
+{
+  "Entities": [
+    {
+      "Name": "Symptoms",
+      "Definition": "Clinical signs and subjective complaints identified from patient notes indicating any medical condition.",
+      "Sample Data": {
+        "Sentence": "Patient reports severe back pain and frequent contractions.",
+        "Annotated": "Symptoms: severe back pain, frequent contractions"
+      }
+    },
+    {
+      "Name": "Events",
+      "Definition": "Medical or health-related occurrences involving the patient, noted by clinical staff.",
+      "Sample Data": {
+        "Sentence": "Patient was admitted with signs of labor onset.",
+        "Annotated": "Events: labor onset"
+      }
+    },
+    {
+      "Name": "Anatomical Sites",
+      "Definition": "Specific body parts or internal regions mentioned in the context of medical assessment or treatment.",
+      "Sample Data": {
+        "Sentence": "Ultrasound showed fluid accumulation in the abdominal cavity.",
+        "Annotated": "Anatomical Sites: abdominal cavity"
+      }
+    },
+    {
+      "Name": "Procedures",
+      "Definition": "Medical interventions or procedures performed or scheduled, as recorded in the clinical notes.",
+      "Sample Data": {
+        "Sentence": "Scheduled for cesarean section due to complications.",
+        "Annotated": "Procedures: cesarean section"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "Medical notes from high-risk pregnancies",
+    "Details": "Collection of notes from hospital staff during the hospitalization of patients at risk of preterm delivery, annotated for clinical entities."
+  },
+  "Annotation Guidelines": {
+    "Description": "Detailed guidelines used for annotating the symptoms, events, anatomical sites, and procedures from the unstructured medical notes. Includes criteria for identification and annotation standards to ensure consistency across the dataset."
+  }
+}

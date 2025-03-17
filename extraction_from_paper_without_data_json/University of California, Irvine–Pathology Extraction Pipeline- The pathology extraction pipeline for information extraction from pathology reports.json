@@ -1,0 +1,164 @@
+{
+  "Entities": [
+    {
+      "Name": "Gleason Score",
+      "Definition": "A grading system used to evaluate the prognosis of men with prostate cancer based on microscopic appearance.",
+      "Sample Data": {
+        "Annotated Sentence": "Gleason score: 7 (4+3)",
+        "Entity": "7 (4+3)"
+      }
+    },
+    {
+      "Name": "TNM Staging",
+      "Definition": "A system used to describe the size and spread of cancer, incorporating Tumor (T), Nodes (N), and Metastases (M) values.",
+      "Sample Data": {
+        "Annotated Sentence": "TNM staging: T1aN0M0",
+        "Entity": "T1aN0M0"
+      }
+    },
+    {
+      "Name": "Capsule Invasion",
+      "Definition": "Indicates whether the tumor has extended beyond the capsule of an organ.",
+      "Sample Data": {
+        "Annotated Sentence": "Capsule invasion: Present",
+        "Entity": "Present"
+      }
+    },
+    {
+      "Name": "Lymph Invasion",
+      "Definition": "Indicates whether cancer cells have invaded the lymphatic vessels.",
+      "Sample Data": {
+        "Annotated Sentence": "Lymph invasion: Absent",
+        "Entity": "Absent"
+      }
+    },
+    {
+      "Name": "Chronic Inflammation",
+      "Definition": "Presence of long-term inflammation in the tissue.",
+      "Sample Data": {
+        "Annotated Sentence": "Chronic inflammation: Mild",
+        "Entity": "Mild"
+      }
+    },
+    {
+      "Name": "Vascular Invasion",
+      "Definition": "Presence of tumor cells within blood vessels.",
+      "Sample Data": {
+        "Annotated Sentence": "Vascular invasion: Not identified",
+        "Entity": "Not identified"
+      }
+    },
+    {
+      "Name": "Perineural Invasion",
+      "Definition": "Cancer cells observed around or within nerves.",
+      "Sample Data": {
+        "Annotated Sentence": "Perineural invasion: Present",
+        "Entity": "Present"
+      }
+    },
+    {
+      "Name": "Surgical Margin",
+      "Definition": "Indicates whether cancer cells are present at the edge of the removed tissue.",
+      "Sample Data": {
+        "Annotated Sentence": "Surgical margin: Positive",
+        "Entity": "Positive"
+      }
+    },
+    {
+      "Name": "Seminal Vesicle Invasion",
+      "Definition": "Indicates whether cancer has spread to the seminal vesicles.",
+      "Sample Data": {
+        "Annotated Sentence": "Seminal vesicle invasion: Absent",
+        "Entity": "Absent"
+      }
+    },
+    {
+      "Name": "Lymph Nodes Sampled",
+      "Definition": "Number of lymph nodes extracted for pathological examination.",
+      "Sample Data": {
+        "Annotated Sentence": "Lymph nodes sampled: 5",
+        "Entity": "5"
+      }
+    },
+    {
+      "Name": "Lymph Nodes Detected",
+      "Definition": "Number of lymph nodes found to contain cancer cells.",
+      "Sample Data": {
+        "Annotated Sentence": "Lymph nodes detected: 2",
+        "Entity": "2"
+      }
+    },
+    {
+      "Name": "Specimen Length",
+      "Definition": "The length of the excised tissue specimen.",
+      "Sample Data": {
+        "Annotated Sentence": "Specimen length: 4.1 cm",
+        "Entity": "4.1 cm"
+      }
+    },
+    {
+      "Name": "Specimen Width",
+      "Definition": "The width of the excised tissue specimen.",
+      "Sample Data": {
+        "Annotated Sentence": "Specimen width: 3.7 cm",
+        "Entity": "3.7 cm"
+      }
+    },
+    {
+      "Name": "Specimen Height",
+      "Definition": "The height of the excised tissue specimen.",
+      "Sample Data": {
+        "Annotated Sentence": "Specimen height: 2.5 cm",
+        "Entity": "2.5 cm"
+      }
+    },
+    {
+      "Name": "Specimen Weight",
+      "Definition": "The weight of the excised tissue specimen.",
+      "Sample Data": {
+        "Annotated Sentence": "Specimen weight: 106.1 g",
+        "Entity": "106.1 g"
+      }
+    },
+    {
+      "Name": "Laterality",
+      "Definition": "Specifies whether the tumor is located on the left or right side.",
+      "Sample Data": {
+        "Annotated Sentence": "Laterality: Right",
+        "Entity": "Right"
+      }
+    },
+    {
+      "Name": "Necrosis",
+      "Definition": "Indicates the presence of dead cells within the tumor.",
+      "Sample Data": {
+        "Annotated Sentence": "Necrosis: Present",
+        "Entity": "Present"
+      }
+    },
+    {
+      "Name": "Estrogen Receptor (ER)",
+      "Definition": "Determines whether cancer cells have estrogen receptors.",
+      "Sample Data": {
+        "Annotated Sentence": "ER: Positive",
+        "Entity": "Positive"
+      }
+    },
+    {
+      "Name": "Progesterone Receptor (PR)",
+      "Definition": "Determines whether cancer cells have progesterone receptors.",
+      "Sample Data": {
+        "Annotated Sentence": "PR: Negative",
+        "Entity": "Negative"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "Pathology Extraction Pipeline Dataset",
+    "Details": "A dataset derived from pathology reports at the University of California, Irvine Medical Center, used for training and evaluating the Pathology Extraction Pipeline (PEP)."
+  },
+  "Annotation Guidelines": {
+    "Description": "Guidelines for annotating pathology reports, detailing the extraction of key cancer pathology entities.",
+    "Link": "Not explicitly mentioned in the document."
+  }
+}

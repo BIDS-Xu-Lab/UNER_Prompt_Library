@@ -1,0 +1,60 @@
+{
+  "Entities": [
+    {
+      "Name": "Medication Name",
+      "Definition": "Names of medications including brand, generic names, and common abbreviations. Examples are 'regular insulin' and 'anesthetic medication'.",
+      "Sample Data": {
+        "Sentence": "Patient was prescribed Advil and Aspirin during their stay.",
+        "Annotated": "Medication Name: Advil, Aspirin"
+      }
+    },
+    {
+      "Name": "Dosage",
+      "Definition": "Indicates the amount and unit of a medication prescribed to a patient. Representations include numerals and non-numeric forms like 'small dose' or 'sliding scale'.",
+      "Sample Data": {
+        "Sentence": "Patient was prescribed Aspirin, 100 mg twice daily.",
+        "Annotated": "Dosage: 100 mg"
+      }
+    },
+    {
+      "Name": "Frequency",
+      "Definition": "Details how often the medication is to be taken. Representations can be specific times like 'twice daily' or intervals like 'every 6 hours'.",
+      "Sample Data": {
+        "Sentence": "Patient to take Tylenol 500 mg every 6 hours for pain.",
+        "Annotated": "Frequency: every 6 hours"
+      }
+    },
+    {
+      "Name": "Mode/Route",
+      "Definition": "Describes the method or route of administration of the medication, such as 'oral', 'IV', or 'sublingual'.",
+      "Sample Data": {
+        "Sentence": "Administer Penicillin V Potassium 500 mg orally.",
+        "Annotated": "Mode/Route: orally"
+      }
+    },
+    {
+      "Name": "Duration",
+      "Definition": "Specifies the length of time the medication should be taken. This can be expressed in days, weeks, or as per the condition of the patient.",
+      "Sample Data": {
+        "Sentence": "Continue with Metformin for the next 30 days.",
+        "Annotated": "Duration: 30 days"
+      }
+    },
+    {
+      "Name": "Reason",
+      "Definition": "Indicates the reason or purpose for the medication, which usually links to a diagnosis, symptom, or therapeutic use.",
+      "Sample Data": {
+        "Sentence": "Amoxicillin prescribed for suspected bacterial infection.",
+        "Annotated": "Reason: bacterial infection"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "i2b2 Medication Extraction Challenge Data",
+    "Details": "Includes 696 hospital discharge summaries used for the development of NLP systems to extract medication-related information."
+  },
+  "Annotation Guidelines": {
+    "Link": "https://www.i2b2.org/NLP/Medication/",
+    "Description": "Guidelines provided by the i2b2 organizers for the annotation of medication information in discharge summaries, including specifications for each medication constituent."
+  }
+}

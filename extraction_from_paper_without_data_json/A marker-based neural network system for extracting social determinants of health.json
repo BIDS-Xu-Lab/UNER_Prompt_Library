@@ -1,0 +1,52 @@
+{
+  "Entities": [
+    {
+      "Name": "Alcohol",
+      "Definition": "Refers to alcohol-related information in a patient's social history.",
+      "Sample Data": {
+        "Sentence": "Reports drinking 2 beers daily for several years until lay off.",
+        "Annotated": "Alcohol: 2 beers daily"
+      }
+    },
+    {
+      "Name": "Drug",
+      "Definition": "Refers to drug-related information, including both illicit and prescription drug use.",
+      "Sample Data": {
+        "Sentence": "Patient has been using marijuana and cocaine.",
+        "Annotated": "Drug: marijuana, cocaine"
+      }
+    },
+    {
+      "Name": "Tobacco",
+      "Definition": "Information related to tobacco use, including smoking status and frequency.",
+      "Sample Data": {
+        "Sentence": "Smoking down to 2-3 cig per day.",
+        "Annotated": "Tobacco: 2-3 cig per day"
+      }
+    },
+    {
+      "Name": "Employment",
+      "Definition": "Employment status and related information.",
+      "Sample Data": {
+        "Sentence": "Currently unemployed, previously worked as a carpenter.",
+        "Annotated": "Employment: unemployed, previous carpenter"
+      }
+    },
+    {
+      "Name": "Living Status",
+      "Definition": "Details about the patient's living conditions.",
+      "Sample Data": {
+        "Sentence": "Living with family, facing eviction.",
+        "Annotated": "Living Status: with family, facing eviction"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "N2C2 Shared Task Data",
+    "Details": "Dataset consists of clinical notes from MIMIC-III and University of Washington Harborview Medical Centers, annotated for social determinants of health."
+  },
+  "Annotation Guidelines": {
+    "Description": "The annotations involve detailed categorization of social determinants of health from clinical notes, using a novel marker-based neural network model for effective extraction.",
+    "Link": "https://github.com/Zephyr1022/SDOH-N2C2-UTSA"
+  }
+}

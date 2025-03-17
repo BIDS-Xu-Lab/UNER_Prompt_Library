@@ -1,0 +1,44 @@
+{
+  "Entities": [
+    {
+      "Name": "Cancer Imaging Finding",
+      "Definition": "Radiological findings that suggest or confirm the presence of metastatic disease.",
+      "Sample Data": {
+        "Sentence": "New segment VI and segment II/III hepatic hypodense lesions are suspicious for metastases.",
+        "Annotated": "Cancer Imaging Finding: hepatic hypodense lesions suspicious for metastases"
+      }
+    },
+    {
+      "Name": "Anatomic Descriptor",
+      "Definition": "Describes specific anatomical locations or characteristics in the context of radiology reports.",
+      "Sample Data": {
+        "Sentence": "Stable left upper lobe metastasis.",
+        "Annotated": "Anatomic Descriptor: left upper lobe"
+      }
+    },
+    {
+      "Name": "Body Part",
+      "Definition": "Refers to the specific part of the body where metastases are located or suspected.",
+      "Sample Data": {
+        "Sentence": "Larger right hilar adenopathy.",
+        "Annotated": "Body Part: right hilar"
+      }
+    },
+    {
+      "Name": "Assertion Status",
+      "Definition": "The level of certainty or probability that a finding represents metastasis, labeled on a four-point Likert scale.",
+      "Sample Data": {
+        "Sentence": "New segment VI and segment II/III hepatic hypodense lesions are suspicious for metastases.",
+        "Annotated": "Assertion Status: suspicious (probability-uncertain)"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "Radiology Reports Dataset",
+    "Details": "Consists of 4,522 computed tomography (CT) reports from 550 patients, annotated to train models for multilabel classification of metastatic sites."
+  },
+  "Annotation Guidelines": {
+    "Description": "Radiology reports were annotated using INCEpTION, focusing on cancer imaging findings, anatomic descriptors, and body parts with assertion statuses. Annotations were validated by a team including medical oncologists and radiologists.",
+    "Link": "https://ascopubs.org/doi/suppl/10.1200/CCI.23.00122"
+  }
+}

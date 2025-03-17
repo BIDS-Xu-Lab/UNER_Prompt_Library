@@ -1,0 +1,36 @@
+{
+  "Entities": [
+    {
+      "Name": "DIABETES",
+      "Definition": "A category of heart disease risk factor that includes diabetes mellitus as a marker.",
+      "Sample Data": {
+        "Sentence": "The objective of this challenge task is to find clinical evidence from medical records, which indicates the presence and progression of diseases such as DIABETES (DM) and CORONARY ARTERY DISEASE (CAD), and associated risk factors.",
+        "Annotated": "DIABETES: DM"
+      }
+    },
+    {
+      "Name": "CORONARY ARTERY DISEASE",
+      "Definition": "A major category of heart disease, often abbreviated as CAD, which includes coronary heart disease as a significant risk factor.",
+      "Sample Data": {
+        "Sentence": "The objective of this challenge task is to find clinical evidence from medical records, which indicates the presence and progression of diseases such as DIABETES (DM) and CORONARY ARTERY DISEASE (CAD).",
+        "Annotated": "CORONARY ARTERY DISEASE: CAD"
+      }
+    },
+    {
+      "Name": "HYPERTENSION",
+      "Definition": "A heart disease risk factor categorized by elevated blood pressure levels.",
+      "Sample Data": {
+        "Sentence": "Different categories of medications prescribed for individual diseases or risk factors are required to be recognized from the text, such as HYPERTENSION.",
+        "Annotated": "HYPERTENSION"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "i2b2 corpus",
+    "Details": "The dataset includes discharge summaries, clinical notes, and letters from Partners Healthcare, comprising 1,304 medical reports for 296 patients, fully de-identified and manually annotated for heart disease risk factors."
+  },
+  "Annotation Guidelines": {
+    "Description": "The annotations follow the i2b2 challenge annotation guideline, with risk factors such as DIABETES, CORONARY ARTERY DISEASE, and others being highlighted using the Brat Annotation tool.",
+    "Link": "The specific link to the guidelines was not mentioned, but more information can be found in the i2b2 challenge materials."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "Entities": [
+    {
+      "Name": "Risk Factor",
+      "Definition": "Clinical determinants identified as contributing to heart disease, which include demographic factors, clinical diagnoses, and treatment history.",
+      "Sample Data": {
+        "Sentence": "Patient has a history of smoking and high cholesterol, both known risk factors for heart disease.",
+        "Annotated": "Risk Factor: smoking, high cholesterol"
+      }
+    },
+    {
+      "Name": "Demographic Factor",
+      "Definition": "Patient characteristics such as age, sex, and race, which are used to determine risk profiling for heart diseases.",
+      "Sample Data": {
+        "Sentence": "A 65-year-old African American male...",
+        "Annotated": "Demographic Factor: 65-year-old, African American, male"
+      }
+    },
+    {
+      "Name": "Clinical Diagnosis",
+      "Definition": "Medical conditions diagnosed in patients, which are relevant to the assessment of heart disease risk.",
+      "Sample Data": {
+        "Sentence": "Diagnosed with hypertension and diabetes.",
+        "Annotated": "Clinical Diagnosis: hypertension, diabetes"
+      }
+    },
+    {
+      "Name": "Treatment History",
+      "Definition": "Records of medical treatments that have been administered to the patient, relevant to heart health.",
+      "Sample Data": {
+        "Sentence": "Underwent angioplasty in 2019.",
+        "Annotated": "Treatment History: angioplasty in 2019"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "Clinical Texts for Heart Disease Study",
+    "Details": "A collection of clinical texts from electronic health records, annotated for risk factors related to heart disease."
+  },
+  "Annotation Guidelines": {
+    "Description": "The annotation process was guided by clinical experts to ensure accurate representation of heart disease risk factors from clinical texts. The annotation followed a structured protocol developed specifically for this task.",
+    "Link": "No specific link provided in the document for further guidelines."
+  }
+}

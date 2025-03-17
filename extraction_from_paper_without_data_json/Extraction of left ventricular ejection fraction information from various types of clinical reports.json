@@ -1,0 +1,45 @@
+{
+  "Entities": [
+    {
+      "Name": "LVEF Mention",
+      "Definition": "References to Left Ventricular Ejection Fraction in clinical reports.",
+      "Sample Data": {
+        "Annotated Sentence": "The left ventricular ejection fraction was estimated at 55%.",
+        "Entity": "left ventricular ejection fraction"
+      }
+    },
+    {
+      "Name": "LVEF Quantitative Value",
+      "Definition": "Numerical values representing the percentage of blood ejected from the left ventricle.",
+      "Sample Data": {
+        "Annotated Sentence": "The left ventricular ejection fraction was estimated at 55%.",
+        "Entity": "55%"
+      }
+    },
+    {
+      "Name": "LVEF Qualitative Assessment",
+      "Definition": "Descriptive terms used to assess the left ventricular ejection fraction, such as normal, mildly reduced, or severely reduced.",
+      "Sample Data": {
+        "Annotated Sentence": "The ejection fraction was mildly reduced.",
+        "Entity": "mildly reduced"
+      }
+    },
+    {
+      "Name": "LVSF Mention",
+      "Definition": "References to Left Ventricular Systolic Function in clinical notes.",
+      "Sample Data": {
+        "Annotated Sentence": "Global left ventricular systolic function was moderately decreased.",
+        "Entity": "left ventricular systolic function"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "TUCP EF Year 3 Corpus",
+    "Details": "A dataset including 3,060 clinical notes from VA Health Care sites, containing echocardiography, radiology, and TIU reports, annotated for LVEF mentions, LVSF mentions, qualitative assessments, and quantitative values.",
+    "Link": "Not explicitly mentioned in the document."
+  },
+  "Annotation Guidelines": {
+    "Description": "Guidelines for annotating left ventricular ejection fraction (LVEF) information in clinical reports, covering mentions, quantitative values, qualitative assessments, and left ventricular systolic function mentions.",
+    "Link": "http://dx.doi.org/10.1016/j.jbi.2017.01.017"
+  }
+}

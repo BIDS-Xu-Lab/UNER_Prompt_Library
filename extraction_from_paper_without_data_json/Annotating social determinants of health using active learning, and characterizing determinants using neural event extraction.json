@@ -1,0 +1,42 @@
+{
+  "Entities": [
+    {
+      "Name": "Substance Use",
+      "Definition": "Includes information on the usage of substances like alcohol, drugs, and tobacco, detailing the user's status, type, amount, frequency, and history.",
+      "Sample Data": [
+        {
+          "Sentence": "Patient smokes 2 packs of cigarettes daily for the past 8 years.",
+          "Annotated": "Substance Use: Status: current, Type: cigarettes, Amount: 2 packs, Frequency: daily, Duration: for the past 8 years"
+        }
+      ]
+    },
+    {
+      "Name": "Employment",
+      "Definition": "Information related to the patient's employment status, including type of occupation and employment history.",
+      "Sample Data": [
+        {
+          "Sentence": "Works as a nurse, has been unemployed for five years before.",
+          "Annotated": "Employment: Status: employed, Type: nurse, History: unemployed for five years"
+        }
+      ]
+    },
+    {
+      "Name": "Living Status",
+      "Definition": "Details regarding the patient's living arrangements, including with whom they reside and the duration of their current living situation.",
+      "Sample Data": [
+        {
+          "Sentence": "Lives with husband, has been living alone until a month ago.",
+          "Annotated": "Living Status: Status: current, Type: with husband, History: lived alone until a month ago"
+        }
+      ]
+    }
+  ],
+  "Dataset": {
+    "Name": "Social History Annotation Corpus (SHAC)",
+    "Details": "Includes 4480 social history sections from clinical notes, with detailed annotations for various social determinants of health."
+  },
+  "Annotation Guidelines": {
+    "Link": "https://github.com/uw-bionlp",
+    "Description": "The annotation guidelines and source code for the neural event extraction model are available at this GitHub repository."
+  }
+}

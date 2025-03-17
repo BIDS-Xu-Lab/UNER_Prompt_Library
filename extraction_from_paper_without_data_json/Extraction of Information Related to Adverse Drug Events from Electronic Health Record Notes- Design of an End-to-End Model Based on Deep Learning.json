@@ -1,0 +1,57 @@
+{
+  "Entities": [
+    {
+      "Name": "Medication",
+      "Definition": "Any mention of drug names within the EHR text.",
+      "Sample Data": "Aspirin, Metformin"
+    },
+    {
+      "Name": "Indication",
+      "Definition": "The condition or disease that the medication is being used to treat.",
+      "Sample Data": "Indication for Aspirin is thrombosis prevention."
+    },
+    {
+      "Name": "Adverse Drug Event (ADE)",
+      "Definition": "Any injuries or adverse conditions resulting from the administration of a drug.",
+      "Sample Data": "Patient experienced severe gastrointestinal bleeding after taking Aspirin."
+    },
+    {
+      "Name": "Frequency",
+      "Definition": "How often a drug is taken, as mentioned in the EHR.",
+      "Sample Data": "Metformin to be taken twice daily."
+    },
+    {
+      "Name": "Severity",
+      "Definition": "The intensity of an ADE or condition.",
+      "Sample Data": "Experienced severe nausea post chemotherapy."
+    },
+    {
+      "Name": "Dosage",
+      "Definition": "The amount of medication prescribed or taken by the patient.",
+      "Sample Data": "100 mg of Aspirin daily."
+    },
+    {
+      "Name": "Duration",
+      "Definition": "The length of time the patient has been or will be taking the medication.",
+      "Sample Data": "Continue with Metformin for 30 days."
+    },
+    {
+      "Name": "Route",
+      "Definition": "The method of administration of the medication.",
+      "Sample Data": "Administered intravenously."
+    },
+    {
+      "Name": "SSLIF",
+      "Definition": "Signs, symptoms, and other factors not classified under ADEs or indications but related to patient health.",
+      "Sample Data": "Patient shows signs of recovery."
+    }
+  ],
+  "Dataset": {
+    "Name": "MADE 1.0",
+    "Details": "The dataset consists of 1089 EHR notes of cancer patients used for training and testing models to detect medications and ADEs."
+  },
+  "Annotation Guidelines": {
+    "Link": "https://jmir.org/api/download?alt_name=medinform_v6i4e12159_app1.pdf&filename=fd29926ce47b2cea1930aed77561efb9.pdf",
+    "Supplemental Materials": "See Multimedia Appendix for additional information on model training and experimental settings."
+  }
+}

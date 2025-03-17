@@ -1,0 +1,69 @@
+{
+  "Entities": [
+    {
+      "Name": "Observation",
+      "Definition": "Specific terms representing abnormal features, such as lesions and opacities in the image.",
+      "Sample Data": {
+        "Annotated Sentence": "A 3-cm increasing irregular nodule in the right upper lobe suggests lung cancer.",
+        "Entity": "nodule"
+      }
+    },
+    {
+      "Name": "Clinical Finding",
+      "Definition": "Terms identified by the radiologists based on observation entities, representing suspected diseases.",
+      "Sample Data": {
+        "Annotated Sentence": "A 3-cm increasing irregular nodule in the right upper lobe suggests lung cancer.",
+        "Entity": "lung cancer"
+      }
+    },
+    {
+      "Name": "Anatomical Location Modifier",
+      "Definition": "Describes the location of observations or clinical findings within the body.",
+      "Sample Data": {
+        "Annotated Sentence": "A 3-cm increasing irregular nodule in the right upper lobe suggests lung cancer.",
+        "Entity": "right upper lobe"
+      }
+    },
+    {
+      "Name": "Certainty Modifier",
+      "Definition": "Indicates the certainty level of an observation or clinical finding, including negation and uncertainty.",
+      "Sample Data": {
+        "Annotated Sentence": "Possible early-stage lung cancer detected.",
+        "Entity": "Possible"
+      }
+    },
+    {
+      "Name": "Change Modifier",
+      "Definition": "Describes the change in an observation over time, indicating progression, stability, or improvement.",
+      "Sample Data": {
+        "Annotated Sentence": "A 3-cm increasing irregular nodule in the right upper lobe suggests lung cancer.",
+        "Entity": "increasing"
+      }
+    },
+    {
+      "Name": "Characteristics Modifier",
+      "Definition": "Describes the qualitative attributes of an observation, such as shape, density, or texture.",
+      "Sample Data": {
+        "Annotated Sentence": "A 3-cm increasing irregular nodule in the right upper lobe suggests lung cancer.",
+        "Entity": "irregular"
+      }
+    },
+    {
+      "Name": "Size Modifier",
+      "Definition": "Indicates the size or dimensions of an observation in measurable terms.",
+      "Sample Data": {
+        "Annotated Sentence": "A 3-cm increasing irregular nodule in the right upper lobe suggests lung cancer.",
+        "Entity": "3-cm"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "Osaka University Hospital Chest CT Report Dataset",
+    "Details": "A dataset consisting of 118,078 annotated chest CT reports from 2010 to 2018, used for training and evaluating clinical term extraction models.",
+    "Link": "Supplementary material mentioned in the paper."
+  },
+  "Annotation Guidelines": {
+    "Description": "Guidelines for annotating clinical terms in radiology reports, defining observations, findings, and various modifiers.",
+    "Link": "https://doi.org/10.1016/j.jbi.2021.103729"
+  }
+}

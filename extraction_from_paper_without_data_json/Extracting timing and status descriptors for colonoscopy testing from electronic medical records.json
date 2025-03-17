@@ -1,0 +1,26 @@
+{
+  "Entities": [
+    {
+      "Name": "Timing References",
+      "Definition": "References to the timing of colonoscopy events, often expressed relative to the date of the document or as specific dates.",
+      "Sample Data": "\"last colonoscopy—5/4/04\", \"The patient remembers having a colonoscopy five years ago\""
+    },
+    {
+      "Name": "Status Indicators",
+      "Definition": "Descriptors indicating the status of colonoscopy events, such as whether they were completed, scheduled, or refused.",
+      "Sample Data": "\"patient refused\", \"test scheduled\", \"colonoscopy completed\""
+    },
+    {
+      "Name": "Completed Colonoscopies",
+      "Definition": "Specific references to colonoscopies that have been completed, as confirmed by electronic medical records or physician validation.",
+      "Sample Data": "\"colonoscopy performed last year with no complications\""
+    }
+  ],
+  "Dataset": {
+    "Name": "Colonoscopy Testing Records",
+    "Details": "Dataset includes electronic medical records from a random sample of 200 patients aged at least 50, used to identify previous colonoscopy screening using NLP."
+  },
+  "Annotation Guidelines": {
+    "Link": "Detailed within the study document; no external link provided. The guidelines cover methods for identifying and annotating timing and status descriptors within EMR text."
+  }
+}

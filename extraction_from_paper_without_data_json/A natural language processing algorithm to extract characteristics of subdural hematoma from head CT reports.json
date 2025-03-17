@@ -1,0 +1,44 @@
+{
+  "Entities": [
+    {
+      "Name": "Number of SDH",
+      "Definition": "Total count of subdural hematomas identified in the CT scan report.",
+      "Sample Data": {
+        "Sentence": "The report indicated multiple instances of SDH.",
+        "Annotated": "Multiple SDH"
+      }
+    },
+    {
+      "Name": "Size of Midline Shift",
+      "Definition": "Measurement in millimeters of the midline shift caused by the largest SDH, indicative of the severity and potential for serious complications.",
+      "Sample Data": {
+        "Sentence": "There is associated mass effect with effacement of the adjacent left cerebral sulci and left lateral ventricle and 6-mm of rightward midline shift.",
+        "Annotated": "6-mm of rightward midline shift"
+      }
+    },
+    {
+      "Name": "Thickness of Largest SDH",
+      "Definition": "Measurement in millimeters of the thickest part of the largest SDH, used to assess the severity of the hemorrhage.",
+      "Sample Data": {
+        "Sentence": "The component overlying the left cerebral convexity measures 11-mm and the tentorial component measures 15-mm.",
+        "Annotated": "15-mm"
+      }
+    },
+    {
+      "Name": "Side of Largest SDH",
+      "Definition": "The location (left or right side of the brain) where the largest SDH is found, important for treatment and prognosis.",
+      "Sample Data": {
+        "Sentence": "Predominantly hyperdense subdural hematoma layering over the left cerebral convexity and left tentorium, measuring up to 15 mm in greatest diameter.",
+        "Annotated": "left"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "CT scan reports for subdural hematoma patients",
+    "Details": "The dataset consists of 643 cranial CT scan reports collected from a single center, annotated for the presence and characteristics of subdural hematoma."
+  },
+  "Annotation Guidelines": {
+    "Link": "https://github.com/NUNLP/NeuroNLP",
+    "Description": "The algorithm's code and pattern-matching approach used for extracting data from CT scan reports are available publicly under a general public license for non-commercial use."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "Entities": [
+    {
+      "Name": "SEX",
+      "Definition": "The patient's sex.",
+      "Sample Data": {
+        "Sentence": "Patient CRLM-CT-1001 is a female.",
+        "Annotated": "SEX: female"
+      }
+    },
+    {
+      "Name": "AGE",
+      "Definition": "The patient's age.",
+      "Sample Data": {
+        "Sentence": "The patient is 65 years old.",
+        "Annotated": "AGE: 65"
+      }
+    },
+    {
+      "Name": "HEPATOPATHY",
+      "Definition": "Type of hepatopathy found in the patient.",
+      "Sample Data": {
+        "Sentence": "Diagnosed with a benign hepatopathy.",
+        "Annotated": "HEPATOPATHY: benign"
+      }
+    },
+    {
+      "Name": "TUMOR_SIZE",
+      "Definition": "Size of the liver tumor detected.",
+      "Sample Data": {
+        "Sentence": "Liver tumor measuring 1.1 cm.",
+        "Annotated": "TUMOR_SIZE: 1.1 cm"
+      }
+    },
+    {
+      "Name": "PROCEDURE",
+      "Definition": "Medical procedure performed on the patient.",
+      "Sample Data": {
+        "Sentence": "Underwent a partial hepatectomy.",
+        "Annotated": "PROCEDURE: partial hepatectomy"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "Synthetic Computed Tomography Scan Reports",
+    "Details": "This dataset consists of 197 synthetic CT scan reports generated and annotated using an LLM, designed to replicate real-world medical reports for NER training."
+  },
+  "Annotation Guidelines": {
+    "Description": "The synthetic reports were generated using a large language model trained on real-world data, then semi-automatically annotated under human supervision to ensure accuracy and relevance of annotations."
+  }
+}

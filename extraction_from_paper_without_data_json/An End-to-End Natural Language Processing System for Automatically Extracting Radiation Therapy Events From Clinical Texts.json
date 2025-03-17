@@ -1,0 +1,52 @@
+{
+  "Entities": [
+    {
+      "Name": "RT Event",
+      "Definition": "An instance of radiation therapy treatment, including all related properties like dose, fraction frequency, fraction number, date, treatment site, and whether it is a boost or not.",
+      "Sample Data": {
+        "Sentence": "Patient received 50 Gy in 25 fractions to the pelvic region with an additional boost of 10 Gy to the prostate.",
+        "Annotated": "RT Event: 50 Gy in 25 fractions to the pelvic region, boost of 10 Gy to the prostate"
+      }
+    },
+    {
+      "Name": "Dose",
+      "Definition": "The amount of radiation administered, expressed in gray (Gy) units.",
+      "Sample Data": {
+        "Sentence": "The treatment plan was to deliver a total of 60 Gy in 30 fractions.",
+        "Annotated": "Dose: 60 Gy"
+      }
+    },
+    {
+      "Name": "Fraction Number",
+      "Definition": "The number of individual sessions in which the radiation dose is divided.",
+      "Sample Data": {
+        "Sentence": "The course consisted of 15 fractions over 3 weeks.",
+        "Annotated": "Fraction Number: 15 fractions"
+      }
+    },
+    {
+      "Name": "Treatment Site",
+      "Definition": "The anatomical location where radiation is targeted.",
+      "Sample Data": {
+        "Sentence": "Radiation was targeted to the left breast.",
+        "Annotated": "Treatment Site: left breast"
+      }
+    },
+    {
+      "Name": "Boost",
+      "Definition": "Additional radiation given to the treatment site, often after the initial course, to achieve a higher total dose.",
+      "Sample Data": {
+        "Sentence": "Post initial treatment, a boost of 16 Gy was administered to the tumor bed.",
+        "Annotated": "Boost: 16 Gy"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "Clinical Radiation Therapy Documents",
+    "Details": "A corpus of 495 documents from various sources including clinical notes and radiation therapy prescriptions, annotated for RT events and their properties."
+  },
+  "Annotation Guidelines": {
+    "Description": "Detailed guidelines developed for the annotation of radiation therapy events, including properties such as dose, fraction number, treatment site, and boost, all linked to their respective RT event.",
+    "Link": "https://github.com/Machine-Learning-for-Medical-Language/radiotherapy_end2end"
+  }
+}
