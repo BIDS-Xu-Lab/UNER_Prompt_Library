@@ -4,40 +4,35 @@
       "Name": "Absence of fecal control",
       "Definition": "Refers to the inability of a patient to control bowel movements, leading to involuntary defecation.",
       "Sample Data": {
-        "Sentence": "She has also been experiencing urinary incontinence and a few episodes of fecal incontinence too.",
-        "Annotated": "Absence of fecal control"
+        "Sentence": "She has also been experiencing urinary incontinence and a few episodes of fecal incontinence too."
       }
     },
     {
       "Name": "Dementia",
       "Definition": "A chronic or persistent disorder of the mental processes caused by brain disease or injury and marked by memory disorders, personality changes, and impaired reasoning.",
       "Sample Data": {
-        "Sentence": "Patient has dementia and daughter feels as though it has worsened since Labor day.",
-        "Annotated": "Dementia"
+        "Sentence": "Patient has dementia and daughter feels as though it has worsened since Labor day."
       }
     },
     {
       "Name": "Falls",
       "Definition": "Includes instances where the patient has fallen, typically indicated in the notes by descriptions of the fall event or injuries associated with a fall.",
       "Sample Data": {
-        "Sentence": "She suffered a fall this past Tuesday and then was complaining of left shoulder pain.",
-        "Annotated": "Falls"
+        "Sentence": "She suffered a fall this past Tuesday and then was complaining of left shoulder pain."
       }
     },
     {
       "Name": "Weight loss",
       "Definition": "Indicates unintentional weight loss which may be a sign of underlying health issues.",
       "Sample Data": {
-        "Sentence": "Sed rate had been mildly elevated except the last one over 70 but in setting of acute illness and weight loss.",
-        "Annotated": "Weight loss"
+        "Sentence": "Sed rate had been mildly elevated except the last one over 70 but in setting of acute illness and weight loss."
       }
     },
     {
       "Name": "Malnutrition",
       "Definition": "A condition that develops when the body does not get the right amount of vitamins, minerals, and other nutrients it needs to maintain healthy tissues and organ function.",
       "Sample Data": {
-        "Sentence": "Inadequate energy intake as evidenced by weight loss.",
-        "Annotated": "Malnutrition"
+        "Sentence": "Inadequate energy intake as evidenced by weight loss."
       }
     },
     {
@@ -60,24 +55,21 @@
       "Name": "Severe urinary control issues",
       "Definition": "Refers to significant difficulties in controlling urination, leading to involuntary loss of urine.",
       "Sample Data": {
-        "Sentence": "She has a suprapubic catheter in (placed under interventional radiology at) because she was having pain on urination.",
-        "Annotated": "Severe urinary control issues"
+        "Sentence": "She has a suprapubic catheter in (placed under interventional radiology at) because she was having pain on urination."
       }
     },
     {
       "Name": "Visual impairment",
       "Definition": "Refers to the loss of vision that cannot be corrected with standard glasses or contact lenses and significantly affects daily activities.",
       "Sample Data": {
-        "Sentence": "Has been seen by vision rehab and is registered with of blind.",
-        "Annotated": "Visual impairment"
+        "Sentence": "Has been seen by vision rehab and is registered with of blind."
       }
     },
     {
       "Name": "Walking difficulty",
       "Definition": "Refers to problems or challenges in walking normally, which may be due to various conditions like arthritis, leg injuries, or neurological issues.",
       "Sample Data": {
-        "Sentence": "Ambulates slowly, uses vital signs as above.",
-        "Annotated": "Walking difficulty"
+        "Sentence": "Ambulates slowly, uses vital signs as above."
       }
     }
   ],
