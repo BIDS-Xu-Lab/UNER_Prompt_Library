@@ -1,5 +1,9 @@
-**Table 1. Summary of collected articles categorized by disease focused**
-**Healthcare Data Overview Table**
+# A Prompt Library for Efficient Clinical Entity Recognition Using Large Language Models
+
+**Original paper**: This folder include all 70 articles in PDF format.
+**Extracted prompt**: This folder includes the prompts using extracted information from the 70 articles.
+
+**Table 1. Summary of collected articles categorized by disease focused with reference**
 
 | Disease Category                | Included Diseases | Included Clinical Note Type | Included Entities | Number of Papers |
 |---------------------------------|-------------------|-----------------------------|-------------------|------------------|
