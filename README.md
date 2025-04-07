@@ -1,5 +1,7 @@
 # A Prompt Library for Efficient Clinical Entity Recognition Using Large Language Models
 
+<img width="837" alt="framework overview" src="https://github.com/user-attachments/assets/6015203e-dce6-45cd-a9ea-c2d7e99e3220" />
+
 **Original paper**: This folder include all 70 articles in PDF format.
 
 **Extracted prompt**: This folder includes the prompts using extracted information from the 70 articles.
