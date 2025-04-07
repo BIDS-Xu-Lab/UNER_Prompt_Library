@@ -1,5 +1,8 @@
 # A Prompt Library for Efficient Clinical Entity Recognition Using Large Language Models
 
+framework overview.png
+![alt text](https://github.com/BIDS-Xu-Lab/UNER_Prompt_Library/framework overview.png?raw=true)
+
 **Original paper**: This folder include all 70 articles in PDF format.
 
 **Extracted prompt**: This folder includes the prompts using extracted information from the 70 articles.
