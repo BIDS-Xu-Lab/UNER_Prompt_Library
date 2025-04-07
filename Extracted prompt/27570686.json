@@ -1,0 +1,48 @@
+{
+  "Entities": [
+    {
+      "Name": "Anatomy",
+      "Definition": "Anatomic locations in the human body mentioned in the report (e.g., liver segments).",
+      "SampleData": "Lesion 1: [segment 8], 2.2 x 1.4cm , image 3/8, hyper enhancing with washout on delayed phase.",
+      "Annotation": "[segment 8]"
+    },
+    {
+      "Name": "Measurement",
+      "Definition": "Quantitative size measurements of lesions or anatomical structures.",
+      "SampleData": "Lesion 1: segment 8, [2.2 x 1.4cm], image 3/8, hyper enhancing with washout on delayed phase.",
+      "Annotation": "[2.2 x 1.4cm]"
+    },
+    {
+      "Name": "Tumor Count",
+      "Definition": "Number of tumor references or lesions mentioned.",
+      "SampleData": "Total number: [5]",
+      "Annotation": "[5]"
+    },
+    {
+      "Name": "Tumor Reference",
+      "Definition": "Phrases referencing potential tumors such as 'lesion', 'mass', or 'focal density'.",
+      "SampleData": "[Lesion 3]: segment 4A, 1.8cm , image 3/7, hyper enhancing with washout on delayed phase.",
+      "Annotation": "[Lesion 3]"
+    },
+    {
+      "Name": "Tumorhood Evidence",
+      "Definition": "Radiologic or diagnostic indicators for malignancy, benignity, or indeterminate nature.",
+      "SampleData": "1.9 x 1.8 cm hyperenhancing mass on the arterial phase with enhancing pseudocapsule, corresponding washout on portal venous phase... characteristic of [HCC].",
+      "Annotation": "[HCC]"
+    },
+    {
+      "Name": "Negation",
+      "Definition": "Indicators negating the presence of a tumor reference.",
+      "SampleData": "No new consolidation identified, [no] pulmonary mass.",
+      "Annotation": "[no]"
+    }
+  ],
+  "Dataset": {
+    "Name": "UW HCC Radiology Report Corpus",
+    "Description": "101 annotated radiology reports from hepatocellular carcinoma patients at the University of Washington Medical Center."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations were created using a template schema including six entity types and seven relation types. Entities were labeled using CRFs and regex rules. Brat was used for annotation. Only 'findings' and 'impressions' sections were annotated. Radiologic cues like 'hypervascular with washout' were used as evidence for malignancy.",
+    "Link": "N/A (not provided in paper)"
+  }
+}

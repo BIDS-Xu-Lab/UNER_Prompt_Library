@@ -1,0 +1,48 @@
+{
+  "Entities": [
+    {
+      "Name": "Medication Name",
+      "Definition": "Name of a drug or therapeutic substance prescribed or administered.",
+      "SampleData": "He was given [Lasix] periodically to prevent him from going into congestive heart failure.",
+      "Annotation": "[Lasix]"
+    },
+    {
+      "Name": "Dosage",
+      "Definition": "Amount or strength of medication administered at each dose.",
+      "SampleData": "The patient was prescribed [25 mg] of metoprolol.",
+      "Annotation": "[25 mg]"
+    },
+    {
+      "Name": "Mode",
+      "Definition": "The route or method of medication administration.",
+      "SampleData": "The medication was given [IV].",
+      "Annotation": "[IV]"
+    },
+    {
+      "Name": "Frequency",
+      "Definition": "How often the medication is to be taken.",
+      "SampleData": "Take 1 tablet [twice daily].",
+      "Annotation": "[twice daily]"
+    },
+    {
+      "Name": "Duration",
+      "Definition": "The total length of time the medication is intended to be taken.",
+      "SampleData": "Continue the medication [for 5 days].",
+      "Annotation": "[for 5 days]"
+    },
+    {
+      "Name": "Reason",
+      "Definition": "The clinical reason or condition that justifies the medication use.",
+      "SampleData": "He was given Lasix periodically to prevent him from going into [congestive heart failure].",
+      "Annotation": "[congestive heart failure]"
+    }
+  ],
+  "Dataset": {
+    "Name": "2009 i2b2 Medication Extraction Challenge Corpus",
+    "Description": "Consists of 1249 patient discharge summaries annotated for medication-related information, split into training (696 records) and test (533 records) sets."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations followed strict and relaxed matching criteria as per i2b2 challenge rules. Each medication entry required extraction of associated attributes such as dosage, frequency, mode, reason, duration, and context. Annotators used a sequential review process with physician verification. Entity relationships were modeled via SVM-based classification.",
+    "Link": "https://www.i2b2.org/NLP/Medication/"
+  }
+}

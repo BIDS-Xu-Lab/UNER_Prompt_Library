@@ -1,0 +1,77 @@
+{
+  "Entities": [
+    {
+      "Name": "Procedure",
+      "Definition": "The name of the surgical procedure performed.",
+      "SampleData": ["Not provided in paper"]
+    },
+    {
+      "Name": "Diagnosis",
+      "Definition": "The name or description of the patient’s primary or secondary diagnosis.",
+      "SampleData": ["Not provided in paper"]
+    },
+    {
+      "Name": "IONM Tech",
+      "Definition": "Intraoperative neuromonitoring techniques used during surgery.",
+      "SampleData": ["Not provided in paper"]
+    },
+    {
+      "Name": "IONM Outcome",
+      "Definition": "The result of intraoperative neuromonitoring.",
+      "SampleData": ["no alerts"]
+    },
+    {
+      "Name": "Level",
+      "Definition": "Spinal levels involved in the procedure.",
+      "SampleData": ["Not provided in paper"]
+    },
+    {
+      "Name": "Bone graft",
+      "Definition": "The type of bone graft material used.",
+      "SampleData": ["autograft"]
+    },
+    {
+      "Name": "Intraop Imaging",
+      "Definition": "Imaging modality used during the procedure.",
+      "SampleData": ["fluoroscopy"]
+    },
+    {
+      "Name": "Estimated Blood Loss",
+      "Definition": "Estimated volume of blood loss during the procedure.",
+      "SampleData": ["Not provided in paper"]
+    },
+    {
+      "Name": "Navigation",
+      "Definition": "Surgical navigation system used for alignment or screw placement.",
+      "SampleData": ["Not provided in paper"]
+    },
+    {
+      "Name": "Fluid Type",
+      "Definition": "Type of IV fluids administered intraoperatively.",
+      "SampleData": ["Not provided in paper"]
+    },
+    {
+      "Name": "Fluid Amount",
+      "Definition": "Volume of fluids administered.",
+      "SampleData": ["Not provided in paper"]
+    },
+    {
+      "Name": "Complications",
+      "Definition": "Mention of any intraoperative or postoperative complication.",
+      "SampleData": ["Not provided in paper"]
+    },
+    {
+      "Name": "Pelvic Fixation",
+      "Definition": "Fixation technique involving pelvic bones.",
+      "SampleData": ["Not provided in paper"]
+    }
+  ],
+  "Dataset": {
+    "Name": "Boston Children’s Hospital Spine Operative Notes",
+    "Description": "Dataset of ~16,000 de-identified operative notes related to scoliosis, annotated with 13 domain-specific entities for weakly supervised domain-adaptive NER."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Entity annotations were derived using weak supervision and external Spark NLP clinical NER models, followed by domain adaptation using InterDAPT. Example entities were shown with color highlights in Figure 2 but span-level gold annotations were not manually created.",
+    "Link": "https://aclanthology.org/2023.bionlp-1.35"
+  }
+}

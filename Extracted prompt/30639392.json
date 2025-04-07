@@ -1,0 +1,37 @@
+{
+  "Entities": [
+    {
+      "Name": "General Fall History",
+      "Definition": "Mentions of any past falls experienced by the patient, regardless of specific timing.",
+      "SampleData": ["fell", "collapsed", "slipped", "tipped over", "fallen backwards"]
+    },
+    {
+      "Name": "Fall History within 2 Weeks",
+      "Definition": "Mentions of a fall occurring within 14 days prior to the date of the clinical note.",
+      "SampleData": ["collapsed this week", "tipped over last Monday", "slipped 2d ago"]
+    },
+    {
+      "Name": "Fall History within 2 Days",
+      "Definition": "Mentions of a fall occurring within 48 hours before the clinical note date.",
+      "SampleData": ["collapsed this am", "tipped over 1h ago", "slipped earlier today"]
+    },
+    {
+      "Name": "Fall Prevention Interventions",
+      "Definition": "Interventions or precautions documented to prevent patient falls.",
+      "SampleData": ["fall precautions", "falls prevention mgt", "gait training", "balance trg"]
+    },
+    {
+      "Name": "Fall Risk",
+      "Definition": "Mentions that describe the patient as being at risk of falling due to health or physical status.",
+      "SampleData": ["high fall risk", "balance deficits", "difficulty walking", "generalized muscle weakness", "feeling unsteady"]
+    }
+  ],
+  "Dataset": {
+    "Name": "Homecare Visit Notes Corpus",
+    "Description": "A corpus of 1,149,586 homecare visit notes from 89,459 patients in a large U.S. homecare agency (2015). Used for training and evaluating fall-related information extraction using both rule-based and NimbleMiner systems."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations were performed using both a rule-based NLP system (regular expressions + negation detection) and NimbleMiner (word embedding-based term discovery with human-in-the-loop). Simclins (similar clinical terms) were iteratively reviewed and refined for labeling using positive-only label learning. Negation terms were excluded using the NegEx algorithm.",
+    "Link": "https://doi.org/10.1016/j.jbi.2019.103103"
+  }
+}

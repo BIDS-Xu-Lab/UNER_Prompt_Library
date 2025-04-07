@@ -1,0 +1,48 @@
+{
+  "Entities": [
+    {
+      "Name": "MEDICATION",
+      "Definition": "The name of the drug or therapeutic substance mentioned in the clinical note.",
+      "SampleData": "Ibuprofen as needed, and [diclofenac] for one month as needed, for abdominal discomfort.",
+      "Annotation": "[diclofenac]"
+    },
+    {
+      "Name": "DOSE",
+      "Definition": "The amount or strength of the medication (e.g., 5 mg, 10 units).",
+      "SampleData": "Take [5 mg] daily as prescribed.",
+      "Annotation": "[5 mg]"
+    },
+    {
+      "Name": "FREQUENCY",
+      "Definition": "How often the medication is to be taken (e.g., twice daily, as needed).",
+      "SampleData": "Ibuprofen [as needed], and diclofenac for one month as needed.",
+      "Annotation": "[as needed]"
+    },
+    {
+      "Name": "DURATION",
+      "Definition": "The total length of time the medication should be administered.",
+      "SampleData": "diclofenac for [one month] as needed.",
+      "Annotation": "[one month]"
+    },
+    {
+      "Name": "REASON",
+      "Definition": "The clinical reason for prescribing the medication.",
+      "SampleData": "Ibuprofen as needed, and diclofenac for one month as needed, for [abdominal discomfort].",
+      "Annotation": "[abdominal discomfort]"
+    },
+    {
+      "Name": "MODE",
+      "Definition": "Route or method of administration (e.g., orally, IV, subcutaneous).",
+      "SampleData": "Administered [orally] every morning.",
+      "Annotation": "[orally]"
+    }
+  ],
+  "Dataset": {
+    "Name": "Medication Extraction Labels for MIMIC-IV-Note",
+    "Description": "A dataset of medication entity labels generated using a Large Language Model (PaLM 2) applied to 600 discharge summaries from MIMIC-IV-Note. The entity schema mirrors the 2009 i2b2 challenge."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Labels were generated via a task-specific few-shot prompt using Google's PaLM 2 LLM. Outputs were parsed into structured entity groupings for each medication mention. The annotation schema replicates the 2009 i2b2 challenge. Each entity includes start and end character offsets, group ID, and label type. Labels were evaluated for quality against human annotator baselines.",
+    "Link": "https://doi.org/10.13026/ps1s-ab29"
+  }
+}

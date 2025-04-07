@@ -1,0 +1,58 @@
+{
+  "Entities": [
+    {
+      "Name": "Colonoscopy Concept",
+      "Definition": "Medical concepts related to colonoscopy, derived from UMLS concept identifiers and common synonyms.",
+      "SampleData": ["colonoscopy", "C scope", "colonscopy"]
+    },
+    {
+      "Name": "Temporal Expression",
+      "Definition": "References to the time when a colonoscopy was performed, planned, or discussed. Includes absolute, relative, and recurring time references.",
+      "SampleData": ["5/4/04", "5 years ago", "last March", "next week", "this past year"]
+    },
+    {
+      "Name": "Status Indicator",
+      "Definition": "Descriptive phrases that modify colonoscopy concepts to indicate status like receipt, scheduling, discussion, refusal, or need.",
+      "Subtypes": [
+        {
+          "StatusType": "Receipt",
+          "SampleData": ["had", "underwent"]
+        },
+        {
+          "StatusType": "Scheduling",
+          "SampleData": ["referred for", "scheduled"]
+        },
+        {
+          "StatusType": "Discussion",
+          "SampleData": ["discussed", "recommended"]
+        },
+        {
+          "StatusType": "In need of",
+          "SampleData": ["due for"]
+        },
+        {
+          "StatusType": "Refusal",
+          "SampleData": ["refused"]
+        },
+        {
+          "StatusType": "Considering",
+          "SampleData": ["would like to wait"]
+        }
+      ]
+    },
+    {
+      "Name": "Negation",
+      "Definition": "Words or phrases that negate the presence of a colonoscopy event.",
+      "SampleData": ["no colonoscopy", "never had colonoscopy", "was not scheduled"],
+      "Annotation": ["no", "never", "not"]
+    }
+  ],
+  "Dataset": {
+    "Name": "Vanderbilt University Medical Center EMR (Colonoscopy Notes)",
+    "Description": "Clinical notes from 200 patients aged ≥50 with ≥2 primary care visits. 1208 colonoscopy references were extracted across 29,770 notes to evaluate NLP models for colonoscopy detection."
+  },
+  "AnnotationGuidelines": {
+    "Description": "The system enhanced the KnowledgeMap Concept Identifier (KMCI) to extract colonoscopy-related concepts, time expressions, and assign status indicators. Rules were applied to detect timing, certainty, and negation from sentence-level context. Status was assigned within a 4-word window of a concept using part-of-speech and verb tense detection.",
+    "Link": "https://doi.org/10.1136/jamia.2010.004804"
+  }
+}

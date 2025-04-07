@@ -1,0 +1,37 @@
+{
+  "Entities": [
+    {
+      "Name": "Injuries",
+      "Definition": "Refers to various types of acute brain injuries identified in the CT reports.",
+      "Sample Data": "Ischemic strokes, intracerebral hemorrhages (ICHs), subarachnoid hemorrhages, and traumatic brain injuries (TBIs)."
+    },
+    {
+      "Name": "Magnitude",
+      "Definition": "Describes the severity or extent of the brain injuries.",
+      "Sample Data": "Examples include terms like small, moderate, or severe to describe injury extent."
+    },
+    {
+      "Name": "Location",
+      "Definition": "Specifies the location within the brain where injuries are identified.",
+      "Sample Data": "Locations such as 'basal ganglia', 'cerebellum', or 'frontal lobe' are noted."
+    },
+    {
+      "Name": "Time",
+      "Definition": "Temporal aspect of the injury, whether it is acute, chronic, or evolving.",
+      "Sample Data": "Terms like 'acute', 'chronic', and 'evolving' are used to describe the timing of the injury."
+    },
+    {
+      "Name": "Other",
+      "Definition": "Includes additional relevant terms used in the context of brain injuries, like negation or uncertainty.",
+      "Sample Data": "Uses terms like 'no evidence of', 'likely', or 'possible' to denote uncertainty or negation of findings."
+    }
+  ],
+  "Dataset": {
+    "Name": "Yale Acute Brain Injury Biorepository",
+    "Details": "Contains CT reports from 1152 patients, used to train and validate the NLP model for detecting brain injuries."
+  },
+  "Annotation Guidelines": {
+    "Description": "Used a custom dictionary of terms relevant to brain injuries for NER, along with a rule-based decoder for classifying injury characteristics from CT reports.",
+    "Link": "The document mentions that the model and its training details are available for public access but does not provide a direct link in the text provided."
+  }
+}

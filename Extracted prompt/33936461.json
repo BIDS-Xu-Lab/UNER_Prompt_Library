@@ -1,0 +1,48 @@
+{
+  "Entities": [
+    {
+      "Name": "Bleeding Event",
+      "Definition": "Mentions of bleeding, such as hematoma or hemorrhage, or indirect terms like 'bright red blood per rectum'.",
+      "SampleData": "hematoma, hemorrhage, bright red blood per rectum",
+      "Annotation": ["hematoma", "hemorrhage", "bright red blood per rectum"]
+    },
+    {
+      "Name": "Bleeding Anatomic Site",
+      "Definition": "Location of bleeding, such as 'retroperitoneal', 'epidural', or 'colonic diverticula'.",
+      "SampleData": "retroperitoneal, epidural, colonic diverticula",
+      "Annotation": ["retroperitoneal", "epidural", "colonic diverticula"]
+    },
+    {
+      "Name": "Suspected Alternative Cause",
+      "Definition": "Non-bleeding causes suspected to result in observed bleeding symptoms. These include trauma, fall, or portal hypertension.",
+      "SampleData": "trauma, fall, portal hypertension",
+      "Annotation": ["trauma", "fall", "portal hypertension"]
+    },
+    {
+      "Name": "Severity",
+      "Definition": "Describes the clinical seriousness of the bleeding, such as 'mild', 'significant', or 'life threatening'.",
+      "SampleData": "mild, significant, life threatening",
+      "Annotation": ["mild", "significant", "life threatening"]
+    },
+    {
+      "Name": "Medication",
+      "Definition": "Drugs that can be linked to bleeding, such as anticoagulants or antiplatelets like warfarin, aspirin, or clopidogrel.",
+      "SampleData": "warfarin, aspirin, clopidogrel",
+      "Annotation": ["warfarin", "aspirin", "clopidogrel"]
+    },
+    {
+      "Name": "Bleeding Lab Evaluation",
+      "Definition": "Lab test results associated with bleeding, such as INR > 3, platelets < 50, or low hemoglobin.",
+      "SampleData": "INR > 3, platelets < 50, low hemoglobin",
+      "Annotation": ["INR > 3", "platelets < 50", "low hemoglobin"]
+    }
+  ],
+  "Dataset": {
+    "Name": "Annotated EHR Discharge Summaries (Northwestern University Hospitals)",
+    "Description": "A total of 1,079 de-identified discharge summaries annotated for bleeding-related entities from patients at hospitals affiliated with Northwestern University."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Each EHR was annotated using a BIO tagging scheme for six bleeding-related entities. Annotators used contextual cues (negation, causality) and included multi-word spans when needed. The guidelines emphasized identifying exact mentions within ±2 lines of known bleeding indicators.",
+    "Link": "No direct link provided. Annotations were done internally under IRB and MOU approvals at University of Massachusetts Medical School and Northwestern University."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "Entities": [
+    {
+      "Name": "ARDS (Group A)",
+      "Definition": "Keywords related to acute respiratory distress syndrome or acute lung injury, directly identifying the condition.",
+      "SampleData": [
+        "acute lung injury",
+        "acute respiratory distress syndrome",
+        "ALI",
+        "ALI/ARDS",
+        "ARDS"
+      ]
+    },
+    {
+      "Name": "Mechanical Ventilation (Group B)",
+      "Definition": "Keywords indicating mechanical ventilation support or procedures like intubation.",
+      "SampleData": [
+        "extubate",
+        "intubate",
+        "mechanical ventilation",
+        "VDRF",
+        "vent-dependent respiratory failure",
+        "ventilator"
+      ]
+    },
+    {
+      "Name": "ICU Admission (Group C)",
+      "Definition": "Keywords denoting admission or stay in an intensive care unit or related facilities.",
+      "SampleData": [
+        "CCU",
+        "critical care",
+        "critical illness",
+        "critically ill",
+        "CTICU",
+        "CTSICU",
+        "ICU",
+        "intensive care",
+        "intensive care unit",
+        "MICU",
+        "NICU",
+        "SICU",
+        "TSICU"
+      ]
+    },
+    {
+      "Name": "PICS Symptoms (Group D)",
+      "Definition": "Keywords associated with post–intensive care syndrome (PICS), including cognitive, psychiatric, or physical impairments.",
+      "SampleData": [
+        "anxiety",
+        "brain dysfunction",
+        "cognitive impairment",
+        "confusion",
+        "delirium",
+        "depression",
+        "executive dysfunction",
+        "immobility",
+        "memory dysfunction",
+        "memory impairment",
+        "mobility impairment",
+        "physical impairment",
+        "PICS",
+        "post–intensive care syndrome",
+        "post-traumatic stress disorder",
+        "PTSD",
+        "weak",
+        "weakness"
+      ]
+    }
+  ],
+  "Dataset": {
+    "Name": "UPHS ARDS Discharge Summary Corpus",
+    "Description": "815 discharge summaries from ARDS survivors in the University of Pennsylvania Health System, analyzed using a keyword-based NLP classifier grouped by four domains of critical illness documentation."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Keywords were manually grouped into 4 categories by clinical experts. The NLP classifier used exact and fuzzy string matching for keyword detection. Manual chart review validated entity presence, confirming high accuracy, especially for ARDS and mechanical ventilation.",
+    "Link": "https://doi.org/10.1513/AnnalsATS.201602-131OC"
+  }
+}

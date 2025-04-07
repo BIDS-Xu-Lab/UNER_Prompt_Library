@@ -1,0 +1,84 @@
+{
+  "Entities": [
+    {
+      "Name": "Lids and Lashes (L/L)",
+      "Definition": "Ophthalmic examination component focused on the external eyelid structures and eyelashes.",
+      "SampleData": ["Lids and lashes normal OU"],
+      "Annotation": ["Lids and lashes"]
+    },
+    {
+      "Name": "Conjunctiva and Sclera (C/S)",
+      "Definition": "Assessment of the conjunctival and scleral tissue for signs of inflammation, injection, or other pathology.",
+      "SampleData": ["white and quiet conjunctiva"],
+      "Annotation": ["white and quiet conjunctiva"]
+    },
+    {
+      "Name": "Cornea (K)",
+      "Definition": "Examination of the corneal surface for clarity, defects, or scarring.",
+      "SampleData": ["clear cornea OU"],
+      "Annotation": ["clear cornea"]
+    },
+    {
+      "Name": "Anterior Chamber (AC)",
+      "Definition": "Assessment of the anterior chamber depth and presence of cells or flare.",
+      "SampleData": ["deep and quiet"],
+      "Annotation": ["deep and quiet"]
+    },
+    {
+      "Name": "Iris",
+      "Definition": "Examination of the iris for normal architecture or abnormal findings like synechiae or rubeosis.",
+      "SampleData": ["normal iris architecture"],
+      "Annotation": ["normal iris architecture"]
+    },
+    {
+      "Name": "Lens",
+      "Definition": "Assessment of lens clarity, position, and presence of cataract or intraocular lens.",
+      "SampleData": ["clear lens", "posterior chamber intraocular lens in place"],
+      "Annotation": ["clear lens", "posterior chamber intraocular lens"]
+    },
+    {
+      "Name": "Anterior Vitreous (AV)",
+      "Definition": "Assessment of the anterior vitreous for cells, haze, or hemorrhage.",
+      "SampleData": ["no anterior vitreous cells"],
+      "Annotation": ["no anterior vitreous cells"]
+    },
+    {
+      "Name": "Optic Disc",
+      "Definition": "Fundus exam component involving assessment of the optic nerve head.",
+      "SampleData": ["pink and sharp optic disc"],
+      "Annotation": ["optic disc"]
+    },
+    {
+      "Name": "Cup to Disc Ratio (CDR)",
+      "Definition": "Measurement comparing the diameter of the optic cup to the optic disc.",
+      "SampleData": ["CDR 0.5"],
+      "Annotation": ["CDR 0.5"]
+    },
+    {
+      "Name": "Macula (M)",
+      "Definition": "Evaluation of the central retina responsible for fine visual acuity.",
+      "SampleData": ["flat and intact macula"],
+      "Annotation": ["flat and intact macula"]
+    },
+    {
+      "Name": "Vessels (V)",
+      "Definition": "Assessment of the retinal blood vessels for tortuosity, attenuation, or leakage.",
+      "SampleData": ["normal vasculature"],
+      "Annotation": ["normal vasculature"]
+    },
+    {
+      "Name": "Periphery (P)",
+      "Definition": "Examination of the peripheral retina for tears, detachments, or pigment changes.",
+      "SampleData": ["flat periphery"],
+      "Annotation": ["flat periphery"]
+    }
+  ],
+  "Dataset": {
+    "Name": "Stanford Ophthalmology Progress Notes Corpus",
+    "Description": "39,099 ophthalmology notes weakly labeled using SmartForms to extract 24 distinct ophthalmic examination components (12 per eye). Evaluated using both weak and human-labeled sets."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Entity labels were derived using a weak supervision approach matching SmartForm values to progress notes. Labels were assigned in IOB2 format (B-label, I-label, O) using greedy alignment of known token-value pairs. Evaluation used Prodigy for correction and review.",
+    "Link": "https://doi.org/10.1016/j.ijmedinf.2022.104864"
+  }
+}

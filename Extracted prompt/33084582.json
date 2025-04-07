@@ -1,0 +1,60 @@
+{
+  "Entities": [
+    {
+      "Name": "Drug",
+      "Definition": "Refers to chemical substances used for treatment, including name, description, formula, and approval status.",
+      "SampleData": "MEKINIST",
+      "Annotation": "MEKINIST"
+    },
+    {
+      "Name": "Gene",
+      "Definition": "Includes gene names and mutations relevant to drug response.",
+      "SampleData": "BRAF V600E",
+      "Annotation": "BRAF V600E"
+    },
+    {
+      "Name": "Disease",
+      "Definition": "Refers to medical conditions, especially cancer types, often linked with gene mutations.",
+      "SampleData": "metastatic melanoma",
+      "Annotation": "metastatic melanoma"
+    },
+    {
+      "Name": "Body_Part",
+      "Definition": "Specific anatomical regions mentioned in relation to disease or drug usage.",
+      "SampleData": "skin",
+      "Annotation": "skin"
+    },
+    {
+      "Name": "Daily_Dose",
+      "Definition": "Refers to the daily dosage of a drug as recommended.",
+      "SampleData": "2 mg orally once daily",
+      "Annotation": "2 mg orally once daily"
+    },
+    {
+      "Name": "Dose_Form",
+      "Definition": "Describes the form in which a drug is administered (e.g., tablet, injection).",
+      "SampleData": "oral tablet",
+      "Annotation": "oral tablet"
+    },
+    {
+      "Name": "Frequency",
+      "Definition": "How often the drug should be taken within a specific timeframe.",
+      "SampleData": "once daily",
+      "Annotation": "once daily"
+    },
+    {
+      "Name": "Adverse_Reaction",
+      "Definition": "Undesired effects resulting from drug administration.",
+      "SampleData": "fever or interstitial lung disease",
+      "Annotation": "fever or interstitial lung disease"
+    }
+  ],
+  "Dataset": {
+    "Name": "FDA PGx Biomarker Drug Labels",
+    "Description": "A corpus of 190 manually annotated drug labels related to pharmacogenomics (PGx), drawn from FDA’s table of PGx biomarkers. Used to train BERT–CRF for named entity recognition."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations were based on FDA PGx label sections: ‘Indications and Usage’, ‘Dosage and Administration’, ‘Use in Specific Populations’, and ‘Adverse Reactions’. Each entity was tagged using color highlights. Drug = yellow, Gene = red, Disease = gray, Dose = green, Reaction = purple, Population = blue.",
+    "Link": "http://www.phoc.org.cn/PGxKM/"
+  }
+}

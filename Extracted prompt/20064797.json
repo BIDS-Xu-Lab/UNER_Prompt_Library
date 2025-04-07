@@ -1,0 +1,67 @@
+{
+  "Entities": [
+    {
+      "Name": "DrugName",
+      "Definition": "Name of the medication, including generic and brand names.",
+      "SampleData": ["Augmentin", "Lisinopril", "Famotidine"]
+    },
+    {
+      "Name": "Strength",
+      "Definition": "The concentration or potency of the drug.",
+      "SampleData": ["875", "50 mg", "500/50"]
+    },
+    {
+      "Name": "Route",
+      "Definition": "Method by which the medication is administered.",
+      "SampleData": ["po", "pr", "by mouth", "intravenous"]
+    },
+    {
+      "Name": "Frequency",
+      "Definition": "How often the medication is taken.",
+      "SampleData": ["q 8hrs", "twice daily", "every 2 days"]
+    },
+    {
+      "Name": "Form",
+      "Definition": "The physical form of the medication.",
+      "SampleData": ["tablet", "ointment"]
+    },
+    {
+      "Name": "Dose Amount",
+      "Definition": "Amount or quantity of medication taken at once.",
+      "SampleData": ["take one tablet"]
+    },
+    {
+      "Name": "IntakeTime",
+      "Definition": "Time of day or context when medication is taken.",
+      "SampleData": ["at 10 am", "cc"]
+    },
+    {
+      "Name": "Duration",
+      "Definition": "Length of time the medication should be taken.",
+      "SampleData": ["for 10 days"]
+    },
+    {
+      "Name": "Dispense Amount",
+      "Definition": "Quantity of medication dispensed.",
+      "SampleData": ["dispensed #30"]
+    },
+    {
+      "Name": "Refill",
+      "Definition": "Number of authorized refills for the medication.",
+      "SampleData": ["refills: 2"]
+    },
+    {
+      "Name": "Necessity",
+      "Definition": "Indication of need or condition under which the medication is taken.",
+      "SampleData": ["prn", "as needed"]
+    }
+  ],
+  "Dataset": {
+    "Name": "Vanderbilt Synthetic Derivative (SD) Clinical Notes",
+    "Description": "Clinical discharge summaries and outpatient visit notes from the Vanderbilt SD database, annotated for 11 medication-related categories."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Entities were annotated using a sequential semantic tagger combining RxNorm lexicons and regular expressions, followed by rule-based disambiguation. Evaluation was conducted against manually reviewed gold standards.",
+    "Link": "https://doi.org/10.1197/jamia.M3378"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "Entities": [
+    {
+      "Name": "Anatomical Entity",
+      "Definition": "Entities corresponding to an anatomical part.",
+      "SampleData": ["pecho", "hígado", "lóbulo tiroideo derecho"]
+    },
+    {
+      "Name": "Finding",
+      "Definition": "A pathological finding or diagnosis.",
+      "SampleData": ["cyst", "cyanosis"]
+    },
+    {
+      "Name": "Location",
+      "Definition": "A location in the body.",
+      "SampleData": ["walls", "cavity", "longitudinal", "frontal", "occipital", "cervicodorsolumbosacra", "lumbosacral", "intracanalar", "subcutanea"]
+    },
+    {
+      "Name": "Measure",
+      "Definition": "Expression indicating a measure.",
+      "SampleData": ["1.5 cm", "50 mm", "3×4×5 cm"]
+    },
+    {
+      "Name": "Type of Measure",
+      "Definition": "Expression indicating a type of measure.",
+      "SampleData": ["diameter", "area", "length"]
+    },
+    {
+      "Name": "Degree",
+      "Definition": "The degree of a finding or other property.",
+      "SampleData": ["leve", "levemente", "mínimo"]
+    },
+    {
+      "Name": "Abbreviation",
+      "Definition": "Acronyms or abbreviations used to indicate medical concepts.",
+      "SampleData": ["RAI", "LTD", "TRI"]
+    },
+    {
+      "Name": "Negation",
+      "Definition": "Hedge cues indicating negation.",
+      "SampleData": ["no se observa", "sin evidencia de", "ausencia de"]
+    },
+    {
+      "Name": "Uncertainty",
+      "Definition": "Hedge cues indicating uncertainty or probability.",
+      "SampleData": ["posiblemente", "sugiere", "podría ser"]
+    },
+    {
+      "Name": "Conditional Temporal",
+      "Definition": "Hedge cues indicating temporality (past/future).",
+      "SampleData": ["previo", "posteriormente", "futuro control"]
+    }
+  ],
+  "Dataset": {
+    "Name": "SpRadIE 2021 Dataset",
+    "Description": "Annotated ultrasonography reports from a pediatric hospital in Argentina. Reports are in Spanish, contain noise (typos/grammar issues), and were annotated for NER by clinical experts and revised by linguists."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Each report is annotated using BIO tagging across 10 entity types. Ambiguities include multi-label tokens (e.g., 'cm' as Measure and Abbreviation). Annotators used expert-provided schemas and entity spans were aligned to domain-specific cues (e.g., hedge terms, medical measurements, findings).",
+    "Link": "https://clefehealth.imag.fr/task-1-spradie-spanish-radiology-information-extraction/"
+  }
+}

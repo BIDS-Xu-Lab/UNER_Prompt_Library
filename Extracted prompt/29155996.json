@@ -1,0 +1,33 @@
+{
+  "Entities": [
+    {
+      "Name": "Primary Site",
+      "Definition": "The anatomical origin of the cancer based on ICD-O-3 topography codes.",
+      "SampleData": [
+        "lower lobe",
+        "upper lobe",
+        "main bronchus",
+        "central portion of breast",
+        "upper-outer quadrant of breast"
+      ]
+    },
+    {
+      "Name": "Histological Grade",
+      "Definition": "A qualitative assessment of tumor differentiation based on cellular morphology (G1 to G4).",
+      "Annotation": [
+        "poorly differentiated",
+        "moderately differentiated",
+        "well differentiated",
+        "undifferentiated"
+      ]
+    }
+  ],
+  "Dataset": {
+    "Name": "SEER Cancer Pathology Reports",
+    "Description": "A dataset of 942 de-identified pathology reports used for primary site classification (12 ICD-O-3 codes for breast and lung cancers) and 645 reports used for histological grade classification (G1–G4). Sourced from SEER registries in 5 U.S. states."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Each pathology report was labeled by trained cancer registry experts following SEER ICD-O-3 and histological grading guidelines. Labels were derived from the 'Final Diagnosis' section only. No token-level entity annotations were used — the task was classification-based.",
+    "Link": "https://academic.oup.com/jamia/article/25/3/321/4636780"
+  }
+}

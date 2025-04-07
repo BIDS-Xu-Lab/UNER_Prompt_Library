@@ -1,0 +1,32 @@
+{
+  "Entities": [
+    {
+      "Name": "Disorder",
+      "Definition": "Clinical findings categorized under the 'disorder' semantic type in SNOMED-CT, automatically extracted from radiological text reports using a NER system. These represent pathologies, diagnoses, or abnormalities often linked to COVID-19.",
+      "SampleData": [
+        "bilateral pneumonia",
+        "ground-glass opacities",
+        "bilateral bronchopneumonia",
+        "organized pneumonia",
+        "patchy infiltrate",
+        "lung consolidation",
+        "pulmonary granuloma",
+        "pulmonary thromboembolism",
+        "pulmonary embolism",
+        "interstitial pneumonia"
+      ]
+    }
+  ],
+  "Dataset": {
+    "Name": "HT Médica Radiological Report Corpus",
+    "Description": "A dataset of 295 Spanish-language chest CT radiology reports annotated for COVID-19 diagnosis consistency, collected in April 2020 from HT Médica."
+  },
+  "AnnotationGuidelines": {
+    "Description": "NER was performed using the BSB system with SNOMED-CT filtering to include only disorder-type concepts. Concept mapping followed Spanish SNOMED-CT COVID-19 extensions and mutual information scores were used to rank relevant features for classification.",
+    "Links": [
+      "https://confluence.ihtsdotools.org/pages/viewpage.action?pageId=71172245",
+      "https://www.mscbs.gob.es/profesionales/hcdsns/areaRecursosSem/snomed-ct/SNOMED_doc/Conceptos_relacionados_SARS-CoV-2-Version7.0.pdf",
+      "https://www.mscbs.gob.es/profesionales/hcdsns/areaRecursosSem/snomed-ct/SNOMED_CT_COVID-19.htm"
+    ]
+  }
+}

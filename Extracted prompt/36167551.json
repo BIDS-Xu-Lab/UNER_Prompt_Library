@@ -1,0 +1,38 @@
+{
+  "Entities": [
+    {
+      "Name": "Lesion",
+      "Definition": "A region in eye tissue that has suffered damage due to diabetic retinopathy.",
+      "SampleData": ["hemorrhage"]
+    },
+    {
+      "Name": "Eye Part",
+      "Definition": "An anatomical part of the eye used to specify the lesion location.",
+      "SampleData": ["foveal"]
+    },
+    {
+      "Name": "Laterality",
+      "Definition": "Indicates whether the observation refers to the right eye, left eye, or both.",
+      "SampleData": ["right eye"]
+    },
+    {
+      "Name": "Severity",
+      "Definition": "Describes how severe the lesion is, often based on standardized grading.",
+      "SampleData": ["mild"]
+    },
+    {
+      "Name": "Negation",
+      "Definition": "Indicates that a lesion or condition is explicitly absent.",
+      "SampleData": ["no hemorrhage", "no microaneurysms"],
+      "Annotation": ["no", "no"]
+    }
+  ],
+  "Dataset": {
+    "Name": "UF Health Fundus Image Report Corpus for DR",
+    "Description": "536 annotated fundus image reports from 155 diabetic retinopathy patients at University of Florida Health. Entities include lesion, eye part, laterality, severity, and negation."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations were performed using the brat tool, guided by custom annotation guidelines created in collaboration with clinicians and NLP experts. Each lesion was linked to its attributes (eye part, laterality, severity, negation) using labeled relations such as 'located', 'laterality-lesion', and 'severity-lesion'.",
+    "Link": "https://doi.org/10.1186/s12911-022-01996-2"
+  }
+}

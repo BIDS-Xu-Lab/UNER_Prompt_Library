@@ -1,0 +1,54 @@
+{
+  "Entities": [
+    {
+      "Name": "Overgrowth",
+      "Definition": "Abnormal increase in tissue or organ size, often due to genetic overexpression or mutation.",
+      "SampleData": "FIRST_NAME [i120] with PIK3CA related [overgrowth] who comes for an evaluation...",
+      "Annotation": "[overgrowth]"
+    },
+    {
+      "Name": "Facial Asymmetry",
+      "Definition": "Uneven appearance of the face due to underlying skeletal or soft tissue imbalance.",
+      "SampleData": "...possible surgical treatment options for his [facial asymmetry].",
+      "Annotation": "[facial asymmetry]"
+    },
+    {
+      "Name": "Normocephalic",
+      "Definition": "Normal head shape and size.",
+      "SampleData": "[Normocephalic] with obvious right facial enlargement...",
+      "Annotation": "[Normocephalic]"
+    },
+    {
+      "Name": "Facial Enlargement",
+      "Definition": "Abnormal increase in facial soft tissue or bone volume.",
+      "SampleData": "...with obvious right [facial enlargement] due to soft tissue infiltration...",
+      "Annotation": "[facial enlargement]"
+    },
+    {
+      "Name": "Lipomatosis",
+      "Definition": "Diffuse proliferation of fatty tissue, usually benign.",
+      "SampleData": "...soft tissue infiltration, likely [lipomatosis].",
+      "Annotation": "[lipomatosis]"
+    },
+    {
+      "Name": "Epidermal Nevus",
+      "Definition": "A benign skin lesion consisting of epidermal cell overgrowth.",
+      "SampleData": "There is an [epidermal nevus] of the right face extending onto the neck.",
+      "Annotation": "[epidermal nevus]"
+    },
+    {
+      "Name": "Posterior Crossbite",
+      "Definition": "A malocclusion in which the posterior teeth bite abnormally in a buccolingual relationship.",
+      "SampleData": "This anomaly is often a part of the phenotypic description... such as [posterior crossbite].",
+      "Annotation": "[posterior crossbite]"
+    }
+  ],
+  "Dataset": {
+    "Name": "NIH BTRIS Craniofacial and Oral Phenotype Corpus",
+    "Description": "2,329 deidentified clinical notes from 558 patients at the NIH Clinical Center, focused on craniofacial, oral, and dental phenotypes using ICD-9 code–based selection."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations of disease/disorder terms were performed on 112 sentences, with clinician adjudication and consensus. The terms were extracted using cTAKES and UMLS mapping and filtered to craniofacial and oral relevance. Manual review determined whether extracted terms were missing from HPO (v2016).",
+    "Link": "https://doi.org/10.1016/j.adaj.2019.05.029"
+  }
+}

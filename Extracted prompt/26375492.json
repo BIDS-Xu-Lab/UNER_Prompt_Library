@@ -1,0 +1,51 @@
+{
+  "Entities": [
+    {
+      "Name": "CAD",
+      "Definition": "Coronary artery disease related annotations.",
+      "Sample Data": ["CAD", "3-vessel coronary artery disease", "Coronary arteriosclerosis"]
+    },
+    {
+      "Name": "SMOKER",
+      "Definition": "Annotations related to smoking status.",
+      "Sample Data": ["Smokes about a half pack per day", "Tob: 2 pack/y since 30 yo"]
+    },
+    {
+      "Name": "DIABETES",
+      "Definition": "Diabetes related annotations.",
+      "Sample Data": ["DM", "DMII", "Diabetes mellitus", "non-insulin-dependent diabetes"]
+    },
+    {
+      "Name": "OBESE STATUS",
+      "Definition": "Annotations related to obesity.",
+      "Sample Data": ["moderately obese", "mild obesity", "obesity-related conditions"]
+    },
+    {
+      "Name": "HYPERTENSION",
+      "Definition": "Hypertension related annotations.",
+      "Sample Data": ["HTN", "hypertension", "hypertensive"]
+    },
+    {
+      "Name": "HYPERLIMIDEMIA",
+      "Definition": "Hyperlipidemia related annotations.",
+      "Sample Data": ["elevated cholesterol", "hypercholesterolemia", "hyperlipidemia"]
+    },
+    {
+      "Name": "MEDICATION",
+      "Definition": "Annotations related to medication intake.",
+      "Sample Data": ["lisinopril", "Zestril (LISINOPRIL)", "Insulin 70/30 HUMAN 70-30"]
+    },
+    {
+      "Name": "FAMILY HISTORY",
+      "Definition": "Family history of diseases related annotations.",
+      "Sample Data": ["Mother died in her 50s of CAD", "Brother – CABG with redo in his 40’s"]
+    }
+  ],
+  "Dataset": {
+    "Name": "i2b2 2014",
+    "Details": "Dataset includes clinical notes and discharge summaries, annotated for various risk factors."
+  },
+  "Annotation Guidelines": {
+    "Link": "URL to the annotation guidelines if available in the full document."
+  }
+}

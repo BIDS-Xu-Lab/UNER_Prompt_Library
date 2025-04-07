@@ -1,0 +1,85 @@
+{
+  "Entities": [
+    {
+      "Name": "Disorder",
+      "Definition": "Diagnosed or suspected medical condition related to the patient’s health.",
+      "SampleData": "breast cancer",
+      "Annotation": "breast cancer"
+    },
+    {
+      "Name": "Body location",
+      "Definition": "Anatomical regions relevant to breast cancer findings or procedures.",
+      "SampleData": "right breast",
+      "Annotation": "right breast"
+    },
+    {
+      "Name": "Tumor direction",
+      "Definition": "Relative orientation or directionality of a tumor in the body.",
+      "SampleData": "located in the upper outer quadrant of the right breast",
+      "Annotation": "upper outer quadrant"
+    },
+    {
+      "Name": "Pathological type",
+      "Definition": "Histological classification of cancer tissues.",
+      "SampleData": "invasive ductal carcinoma",
+      "Annotation": "invasive ductal carcinoma"
+    },
+    {
+      "Name": "Biomarker",
+      "Definition": "Markers used to characterize tumor biology (e.g., HER2, ER, PR, Ki-67).",
+      "SampleData": "HER2 (+++)", 
+      "Annotation": "HER2"
+    },
+    {
+      "Name": "Test value",
+      "Definition": "Numerical or symbolic expression of biomarker test results.",
+      "SampleData": "+++ (positive HER2 result)",
+      "Annotation": "+++"
+    },
+    {
+      "Name": "Ultrasonography",
+      "Definition": "Ultrasound imaging used for preoperative tumor evaluation.",
+      "SampleData": "ultrasound indicated axillary lymph node enlargement",
+      "Annotation": "axillary lymph node enlargement"
+    },
+    {
+      "Name": "Surgery",
+      "Definition": "Surgical procedures performed for treatment or diagnosis.",
+      "SampleData": "modified radical mastectomy for right breast cancer",
+      "Annotation": "modified radical mastectomy"
+    },
+    {
+      "Name": "Temporal expression",
+      "Definition": "Mentions of time for events or procedures.",
+      "SampleData": "hospitalized in May 2020",
+      "Annotation": "May 2020"
+    },
+    {
+      "Name": "Abnormality",
+      "Definition": "Findings deviating from normal, indicating potential health concerns.",
+      "SampleData": "mass, calcification",
+      "Annotation": ["mass", "calcification"]
+    },
+    {
+      "Name": "Regional lymph node",
+      "Definition": "Mentions of lymph node involvement near tumor sites.",
+      "SampleData": "axillary lymph node",
+      "Annotation": "axillary lymph node"
+    },
+    {
+      "Name": "Negation",
+      "Definition": "Cues indicating the absence of a condition or finding.",
+      "SampleData": "no mass found",
+      "Annotation": "no"
+    }
+  ],
+  "Dataset": {
+    "Name": "Chinese Breast Cancer Clinical Note Corpus",
+    "Description": "A dataset of 600 clinical notes (100 each from 6 note types) across 100 breast cancer inpatients. Notes include encounter, operation, pathology, radiology, progress, and discharge records annotated with 41 entity types and 34 relation types.",
+    "Languages": "Chinese (character-based tokenization)"
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations were made by trained medical students based on a domain-expert-designed information model. BIO tagging format was used. BERT embeddings were fine-tuned using Bi-LSTM-CRF models for NER, and entity relations were extracted with BERT-based classification by replacing entity spans with their semantic types.",
+    "Link": "https://doi.org/10.1016/j.ijmedinf.2019.103985"
+  }
+}

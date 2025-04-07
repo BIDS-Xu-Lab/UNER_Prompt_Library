@@ -1,0 +1,57 @@
+{
+  "Entities": [
+    {
+      "Name": "ClinicalQuery",
+      "Definition": "Clinical query that indicates the presence or suspicion of an invasive fungal infection (IFI).",
+      "SampleData": "? infection PJP"
+    },
+    {
+      "Name": "FungalDescriptor",
+      "Definition": "Descriptors suggesting the presence of fungal organisms, often descriptive morphological terms.",
+      "SampleData": "acute angle branching hyphae"
+    },
+    {
+      "Name": "Fungus",
+      "Definition": "Mentions of specific fungal organisms.",
+      "SampleData": "Cryptococcus"
+    },
+    {
+      "Name": "Invasiveness",
+      "Definition": "Phrases describing fungal invasion into tissues or structures.",
+      "SampleData": "vessel lung parenchyma infiltrated"
+    },
+    {
+      "Name": "Stain",
+      "Definition": "Names of histological stains used to detect fungal elements.",
+      "SampleData": "Grocott stain"
+    },
+    {
+      "Name": "SampleType",
+      "Definition": "Tissue source or sampled organ from which the specimen was taken.",
+      "SampleData": "duodenal biopsy"
+    },
+    {
+      "Name": "Positive",
+      "Definition": "Affirmative expressions indicating the presence of IFI or a concept.",
+      "SampleData": "presence of fungal elements"
+    },
+    {
+      "Name": "Equivocal",
+      "Definition": "Phrases expressing diagnostic uncertainty or ambiguity.",
+      "SampleData": "features may be consistent with fungal infection"
+    },
+    {
+      "Name": "Negative",
+      "Definition": "Expressions explicitly negating the presence of IFI or its features.",
+      "SampleData": "no fungal organisms identified"
+    }
+  ],
+  "Dataset": {
+    "Name": "CHIFIR (Cytology and Histopathology Invasive Fungal Infection Reports)",
+    "Description": "A corpus of 283 clinical cytology and histopathology reports from 201 patients, annotated for IFI concepts. Developed to support research on fungal infection detection."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Entities were annotated to capture concepts relevant to IFI diagnosis. Terms were labeled based on their context in pathology reports. The CRF model used token-level features including capitalization, prefixes/suffixes, hyphenation, and context windows. Labels were assigned at the token level using BIO tagging, then aggregated into full spans.",
+    "Link": "https://physionet.org/content/corpus-fungal-infections/1.0.0/"
+  }
+}

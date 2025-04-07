@@ -1,0 +1,30 @@
+{
+  "Entities": [
+    {
+      "Name": "Problem",
+      "Definition": "Medical problems or conditions mentioned in the clinical text.",
+      "SampleData": "Patient presents with [shortness of breath].",
+      "Annotation": "[shortness of breath]"
+    },
+    {
+      "Name": "Test",
+      "Definition": "Clinical or diagnostic tests performed on the patient.",
+      "SampleData": "An [echocardiogram] revealed a pericardial effusion.",
+      "Annotation": "[echocardiogram]"
+    },
+    {
+      "Name": "Treatment",
+      "Definition": "Therapeutic procedures or medications administered to treat a medical condition.",
+      "SampleData": "He was given [Lasix] periodically to prevent him from going into congestive heart failure.",
+      "Annotation": "[Lasix]"
+    }
+  ],
+  "Dataset": {
+    "Name": "2010 i2b2/VA Challenge Corpus",
+    "Description": "Annotated corpus of clinical discharge summaries and progress notes used in the i2b2/VA 2010 challenge."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Concepts were annotated as Problems, Tests, or Treatments. Assertions were assigned to Problems based on context (e.g., negation, temporality, subject). Relations between concepts were assigned based on co-occurrence in a sentence and contextual language. Guidelines were provided to annotators and are publicly available.",
+    "Link": "https://www.i2b2.org/NLP/DataSets/Main.php"
+  }
+}

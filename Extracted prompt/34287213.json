@@ -1,0 +1,96 @@
+{
+  "Entities": [
+    {
+      "Name": "Mass",
+      "Definition": "Suspected mass/nodule/lesion in the lung.",
+      "SampleData": "mass",
+      "Annotation": "mass"
+    },
+    {
+      "Name": "Lymph node",
+      "Definition": "Suspected lymph node metastasis.",
+      "SampleData": "enlarged lymph node",
+      "Annotation": "enlarged lymph node"
+    },
+    {
+      "Name": "Location",
+      "Definition": "Location of mass or lymph node.",
+      "SampleData": "right basal segment of the upper left lung",
+      "Annotation": "right basal segment of the upper left lung"
+    },
+    {
+      "Name": "Size",
+      "Definition": "Size of mass or lymph node.",
+      "SampleData": "25×22 cm",
+      "Annotation": "25×22 cm"
+    },
+    {
+      "Name": "Negation",
+      "Definition": "Negative words indicating absence.",
+      "SampleData": "unseen",
+      "Annotation": "unseen"
+    },
+    {
+      "Name": "Density",
+      "Definition": "Density of mass.",
+      "SampleData": "ground glass density",
+      "Annotation": "ground glass density"
+    },
+    {
+      "Name": "Enhancement",
+      "Definition": "Enhancement extent of mass.",
+      "SampleData": "significant enhancement",
+      "Annotation": "significant enhancement"
+    },
+    {
+      "Name": "Shape",
+      "Definition": "Shape of mass.",
+      "SampleData": "spiculate boundary",
+      "Annotation": "spiculate boundary"
+    },
+    {
+      "Name": "Bronchus",
+      "Definition": "Description of bronchial invasion.",
+      "SampleData": "bronchial stenosis",
+      "Annotation": "bronchial stenosis"
+    },
+    {
+      "Name": "Pleura",
+      "Definition": "Description of pleural invasion or metastasis.",
+      "SampleData": "pleural indentation",
+      "Annotation": "pleural indentation"
+    },
+    {
+      "Name": "Vessel",
+      "Definition": "Description of great vessel invasion.",
+      "SampleData": "surrounds the right lower pulmonary artery",
+      "Annotation": "surrounds the right lower pulmonary artery"
+    },
+    {
+      "Name": "Vertebral body",
+      "Definition": "Description of vertebral body invasion.",
+      "SampleData": "bone destruction seen in the vertebral body",
+      "Annotation": "bone destruction seen in the vertebral body"
+    },
+    {
+      "Name": "Effusion",
+      "Definition": "Description of pleural or pericardial effusion.",
+      "SampleData": "pericardial effusion",
+      "Annotation": "pericardial effusion"
+    },
+    {
+      "Name": "PAOP",
+      "Definition": "Description of pulmonary atelectasis or obstructive pneumonitis.",
+      "SampleData": "atelectasis",
+      "Annotation": "atelectasis"
+    }
+  ],
+  "Dataset": {
+    "Name": "Chest CT Reports (Peking University Cancer Hospital)",
+    "Description": "392 manually annotated CT reports of lung cancer patients. Used to develop and evaluate a deep learning–based information extraction system for staging lung cancer."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations were performed by two trained annotators using brat with a BIO labeling scheme. The final guidelines were developed iteratively in collaboration with clinicians and include 14 entity types and 4 relation types. Interannotator agreement achieved κ = 0.937.",
+    "Link": "https://jmir.org/api/download?alt_name=medinform_v9i7e27955_app2.pdf&filename=291baf5132a70be3c7d5094ac78d5c69.pdf"
+  }
+}

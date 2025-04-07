@@ -1,0 +1,42 @@
+{
+  "Entities": [
+    {
+      "Name": "Wound - Type",
+      "Definition": "The nature of the wound (e.g., wound, ulcer, incision, blister, etc.).",
+      "SampleData": "broken skin",
+      "Annotation": "broken skin"
+    },
+    {
+      "Name": "Wound - Pressure Ulcer Stage",
+      "Definition": "The documented stage of a pressure ulcer, such as stage I, stage III, or unstageable.",
+      "SampleData": "stage 3 on heel",
+      "Annotation": "stage 3"
+    },
+    {
+      "Name": "Wound - Size",
+      "Definition": "The dimensions of the wound including length, width, and depth if available.",
+      "SampleData": "7 mm",
+      "Annotation": "7 mm"
+    },
+    {
+      "Name": "Wound - Anatomic Location",
+      "Definition": "The anatomical position of the wound on the patient's body.",
+      "SampleData": "UIQ",
+      "Annotation": "UIQ"
+    },
+    {
+      "Name": "Wound - Treatment",
+      "Definition": "Details of wound treatment interventions including medications, dressings, procedures.",
+      "SampleData": "cleansed with normal saline",
+      "Annotation": "cleansed with normal saline"
+    }
+  ],
+  "Dataset": {
+    "Name": "Partners Healthcare Clinical Notes",
+    "Description": "Clinical notes collected from patients with ischemic heart disease hospitalized between 2011–2013 at Partners Healthcare System. The dataset includes annotated wound cases from discharge summaries and outpatient notes."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations were performed using the Knowtator tool integrated into Protégé. The wound minimum-dataset included five core elements: wound type, pressure ulcer stage, wound size, wound location, and wound treatment. The system used lexicons from SNOMED-CT, ICD-9, LOINC, and manual curation from training data.",
+    "Link": "http://knowtator.sourceforge.net"
+  }
+}

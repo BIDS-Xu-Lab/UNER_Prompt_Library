@@ -1,0 +1,87 @@
+{
+  "Entities": [
+    {
+      "Name": "Infection or IFI",
+      "Definition": "A clinical query indicating a suspected invasive fungal infection or general infection, often found in the 'clinical notes' section.",
+      "SampleData": "? cryptococcus"
+    },
+    {
+      "Name": "Risk factor",
+      "Definition": "Mentions of host-related conditions or treatments indicating elevated risk of developing an IFI.",
+      "SampleData": "AML induction"
+    },
+    {
+      "Name": "Abnormality",
+      "Definition": "Text spans indicating mixed radiologic findings (from PET and/or CT) suggestive of IFI.",
+      "SampleData": "FDG-avid lesion in left upper lobe with cavitation"
+    },
+    {
+      "Name": "Abnormality PET",
+      "Definition": "Metabolic abnormality identified via PET scan, suggestive of IFI.",
+      "SampleData": "FDG uptake in right lung"
+    },
+    {
+      "Name": "Abnormality CT",
+      "Definition": "Structural abnormality identified via CT scan, suggestive of IFI.",
+      "SampleData": "cavitary lesion in left lung"
+    },
+    {
+      "Name": "Lung",
+      "Definition": "Lung region with associated abnormality.",
+      "SampleData": "left upper lobe"
+    },
+    {
+      "Name": "Sinus",
+      "Definition": "Sinus region referenced in relation to IFI-related abnormality.",
+      "SampleData": "maxillary sinus"
+    },
+    {
+      "Name": "Other",
+      "Definition": "Other anatomical locations associated with IFI-related abnormalities, excluding lung and sinus.",
+      "SampleData": "hepatic lesion"
+    },
+    {
+      "Name": "Infection/inflammation",
+      "Definition": "Mentions of infection or inflammation, particularly in findings or conclusions. Includes ‘IFI indication’ subtype.",
+      "SampleData": "invasive fungal infection"
+    },
+    {
+      "Name": "Positive",
+      "Definition": "Affirmative expressions confirming the presence of an IFI-related abnormality or condition.",
+      "SampleData": "definite fungal involvement"
+    },
+    {
+      "Name": "Equivocal",
+      "Definition": "Uncertain or ambiguous expressions about IFI presence.",
+      "SampleData": "could represent infection"
+    },
+    {
+      "Name": "Negative",
+      "Definition": "Expressions negating the presence of IFI.",
+      "SampleData": "no evidence of fungal infection"
+    },
+    {
+      "Name": "Improvement",
+      "Definition": "Language indicating that a previously described abnormality or infection has improved.",
+      "SampleData": "reduced size of lesion"
+    },
+    {
+      "Name": "Stable",
+      "Definition": "Language indicating no change in abnormality status.",
+      "SampleData": "no significant interval change"
+    },
+    {
+      "Name": "Worsening",
+      "Definition": "Language indicating progression or deterioration of an abnormality or infection.",
+      "SampleData": "increased FDG uptake"
+    }
+  ],
+  "Dataset": {
+    "Name": "PIFIR (PET-CT Invasive Fungal Infection Reports)",
+    "Description": "A dataset of 201 de-identified PET-CT radiology reports annotated for IFI-related concepts and relations. Created for developing NLP tools for IFI surveillance."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations capture 15 entity types including IFI indicators, anatomical locations, and modifiers of certainty or progression. Relations describe location, certainty, and progression associations. The schema was developed iteratively with adjudication by two radiologists. Final annotations are provided in BRAT standoff format.",
+    "Link": "https://github.com/vlada-rozova/pifir"
+  }
+}

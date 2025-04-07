@@ -1,0 +1,57 @@
+{
+  "Entities": [
+    {
+      "Name": "Medication",
+      "Definition": "Drug name mentioned in the clinical note, including generic or brand names.",
+      "SampleData": ["amoxicillin", "acetaminophen", "ibuprofen"]
+    },
+    {
+      "Name": "Indication",
+      "Definition": "The medical reason or condition for which the medication was prescribed.",
+      "SampleData": ["infection", "fever", "pain"]
+    },
+    {
+      "Name": "Frequency",
+      "Definition": "How often the medication should be taken.",
+      "SampleData": ["twice daily", "every 8 hours", "once a day"]
+    },
+    {
+      "Name": "Severity",
+      "Definition": "The intensity or seriousness of the adverse event.",
+      "SampleData": ["mild", "moderate", "severe"]
+    },
+    {
+      "Name": "Dosage",
+      "Definition": "The amount of medication to be administered at each time.",
+      "SampleData": ["500 mg", "2 tablets", "10 ml"]
+    },
+    {
+      "Name": "Duration",
+      "Definition": "The length of time the medication is to be taken.",
+      "SampleData": ["for 5 days", "1 week", "ongoing"]
+    },
+    {
+      "Name": "Route",
+      "Definition": "The method of administration of the medication.",
+      "SampleData": ["oral", "intravenous", "topical"]
+    },
+    {
+      "Name": "ADE",
+      "Definition": "Adverse drug event—any undesired medical occurrence after drug administration.",
+      "SampleData": ["rash", "nausea", "dizziness", "renal failure"]
+    },
+    {
+      "Name": "SSLIF",
+      "Definition": "Any sign, symptom, or disease not annotated as ADE or Indication.",
+      "SampleData": ["headache", "cough", "hypertension"]
+    }
+  ],
+  "Dataset": {
+    "Name": "MADE 1.0 (Medication, Indication, and Adverse Drug Events)",
+    "Description": "Consists of 1089 de-identified EHR notes from cancer patients, used for extraction of medications, indications, ADEs, and associated attributes and relations."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Each entity was labeled using a BMES (Begin, Middle, End, Single) schema plus entity type (e.g., B_ADE, S_Route). Seven relation types were defined between entities (e.g., Medication-ADE, Route-Medication). The annotations were manually reviewed and used to train a BiLSTM-CRF model for NER and BiLSTM-Attention for RE.",
+    "Link": "https://github.com/jianlins/MADE-1.0-Corpus"
+  }
+}

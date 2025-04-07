@@ -1,0 +1,54 @@
+{
+  "Entities": [
+    {
+      "Name": "Medication",
+      "Definition": "Pharmacological agents mentioned in the context of imaging or clinical findings.",
+      "SampleData": "Non contrast routine CT imaging chest.",
+      "Annotation": "[Non contrast]"
+    },
+    {
+      "Name": "Imaging",
+      "Definition": "Imaging modality used or referenced in the radiology report.",
+      "SampleData": "Non contrast medication routine CT chest.",
+      "Annotation": "[CT]"
+    },
+    {
+      "Name": "Anatomy",
+      "Definition": "Specific anatomical regions mentioned in the radiology report.",
+      "SampleData": "Unchanged right hemidiaphragm elevation and chronic basal right lower lobe.",
+      "Annotation": "[hemidiaphragm]", "[basal]", "[lower lobe]"
+    },
+    {
+      "Name": "Side",
+      "Definition": "Laterality of findings such as 'left', 'right', etc.",
+      "SampleData": "Low suspicion 3 mm measurement right side upper lobe.",
+      "Annotation": "[right]"
+    },
+    {
+      "Name": "Diagnosis (positive)",
+      "Definition": "Confirmed or suspected clinical condition mentioned in the report.",
+      "SampleData": "Linear atelectasis diagnosis(P) along the minor fissure.",
+      "Annotation": "[atelectasis]"
+    },
+    {
+      "Name": "Diagnosis (negative)",
+      "Definition": "Negative findings explicitly stated in the report.",
+      "SampleData": "No new consolidation diagnosis(N) identified.",
+      "Annotation": "[consolidation]"
+    },
+    {
+      "Name": "Measurement",
+      "Definition": "Numeric size measurements mentioned in the report.",
+      "SampleData": "Low suspicion 3 mm measurement right side upper lobe.",
+      "Annotation": "[3 mm]"
+    }
+  ],
+  "Dataset": {
+    "Name": "Figure 2 – Annotated CT Radiology Snippet (SapienNER Evaluation)",
+    "Description": "Example annotated CT report showing outputs of SapienNER. Entities include diagnoses, anatomy, measurements, and modifiers."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Figure 2 demonstrates token-level annotations performed by SapienNER. Labels are assigned to clinical entities including medications, imaging types, and pulmonary findings. Colored highlights indicate different entity types.",
+    "Link": "https://doi.org/10.1177/08465371241266785"
+  }
+}

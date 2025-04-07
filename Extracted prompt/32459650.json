@@ -1,0 +1,57 @@
+{
+  "Entities": [
+    {
+      "Name": "Drug",
+      "Definition": "Name of the prescribed or administered medication.",
+      "SampleData": ["Coumadin", "lisinopril", "Tylenol"]
+    },
+    {
+      "Name": "Strength",
+      "Definition": "The potency or concentration of a medication.",
+      "SampleData": ["5 mg", "30 units", "500 mg"]
+    },
+    {
+      "Name": "Form",
+      "Definition": "The physical form in which a medication is administered.",
+      "SampleData": ["tablet", "capsule", "syrup"]
+    },
+    {
+      "Name": "Frequency",
+      "Definition": "How often a drug is to be taken.",
+      "SampleData": ["daily", "every 6 hours", "QHS"]
+    },
+    {
+      "Name": "Route",
+      "Definition": "Method by which the drug is administered.",
+      "SampleData": ["by mouth", "PO", "intravenous"]
+    },
+    {
+      "Name": "Dosage",
+      "Definition": "The amount of medication taken at each administration.",
+      "SampleData": ["1×5 mg", "2 tablets"]
+    },
+    {
+      "Name": "Duration",
+      "Definition": "The period over which a drug is administered.",
+      "SampleData": ["for 5 days", "7 days", "as needed"]
+    },
+    {
+      "Name": "ADE",
+      "Definition": "Adverse drug event — a negative or undesired effect from medication.",
+      "SampleData": ["rash", "nausea", "muscle pain"]
+    },
+    {
+      "Name": "Reason",
+      "Definition": "The condition or purpose for which a drug is administered.",
+      "SampleData": ["constipation", "fever", "coronary artery disease"]
+    }
+  ],
+  "Dataset": {
+    "Name": "n2c2 2018 ADE and Medication Dataset",
+    "Description": "505 de-identified clinical discharge summaries annotated for drug-centric entities and relations including drug attributes, ADEs, and reasons."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Each sentence was annotated using a BIO tagging scheme for entities and a drug-centric joint encoding scheme for relations. Relations were defined only if a link existed between a drug and the relevant attribute or condition. Knowledge embeddings from FAERS were integrated to improve recognition of implicit or intersentential relationships.",
+    "Link": "https://doi.org/10.2196/18417"
+  }
+}

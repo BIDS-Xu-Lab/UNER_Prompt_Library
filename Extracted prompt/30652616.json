@@ -1,0 +1,52 @@
+{
+  "Entities": [
+    {
+      "Name": "Tumor Stage",
+      "Definition": "Pathological staging of prostate cancer post-surgery.",
+      "Sample Data": {
+        "Sentence": "The narratively written pathologic EHRs contained the following variable of interest: tumor stage (pT2a, pT2b, pT2c, pT3a, pT3b, pT4).",
+        "Annotated": "Tumor Stage: pT2a, pT2b, pT2c, pT3a, pT3b, pT4"
+      }
+    },
+    {
+      "Name": "Gleason Patterns",
+      "Definition": "Classification of prostate cancer based on the Gleason score, indicating the aggressiveness of cancer cells.",
+      "Sample Data": {
+        "Sentence": "Primary and secondary Gleason patterns and corresponding percentages were noted as variables of interest.",
+        "Annotated": "Gleason Patterns: Primary and Secondary"
+      }
+    },
+    {
+      "Name": "Surgical Margin",
+      "Definition": "Indicates whether cancer cells were found at the edge of the tissue removed during surgery.",
+      "Sample Data": {
+        "Sentence": "Surgical margin statuses such as R0, RX, R1 were also key variables of interest.",
+        "Annotated": "Surgical Margin: R0, RX, R1"
+      }
+    },
+    {
+      "Name": "Prostate Specimen Volume",
+      "Definition": "The volume of the prostate specimen removed during surgery.",
+      "Sample Data": {
+        "Sentence": "Included prostate specimen volume as a variable of interest.",
+        "Annotated": "Prostate Specimen Volume: [specific volume]"
+      }
+    },
+    {
+      "Name": "Nodal Stage",
+      "Definition": "Classification of whether cancer has spread to nearby lymph nodes.",
+      "Sample Data": {
+        "Sentence": "Nodal stage was categorized as pN0, pNX, pN1.",
+        "Annotated": "Nodal Stage: pN0, pNX, pN1"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "Prostate Cancer Pathologic Database",
+    "Details": "Includes 3,679 RP electronic health records from a prostate cancer center, processed for detailed pathological information."
+  },
+  "Annotation Guidelines": {
+    "Description": "The annotations were created by identifying parts of the EHR corresponding to the variables of interest, annotated semiautomatically using regular expressions based on expert input.",
+    "Link": "Not provided in the document."
+  }
+}

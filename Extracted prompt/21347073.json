@@ -1,0 +1,37 @@
+{
+  "Entities": [
+    {
+      "Name": "Anatomical Site",
+      "Definition": "Vascular anatomical sites associated with lower extremities relevant to PAD diagnosis.",
+      "SampleData": ["common femoral artery", "posterior tibial artery", "femoropopliteal artery"]
+    },
+    {
+      "Name": "Disorder",
+      "Definition": "Pathological conditions relevant to PAD, including terms related to vessel disease or occlusion.",
+      "SampleData": ["complete occlusion", "atherosclerosis", "stenosis"]
+    },
+    {
+      "Name": "Procedure",
+      "Definition": "Medical interventions used for PAD treatment or diagnosis.",
+      "SampleData": ["balloon angioplasty", "artery bypass"]
+    },
+    {
+      "Name": "Modifier (Severity)",
+      "Definition": "Terms indicating severity or degree of disease (used for POS and PROB classification).",
+      "SampleData": ["severe", "extensive", "moderate", "diffuse", "some"]
+    },
+    {
+      "Name": "Negation",
+      "Definition": "Terms that negate the presence of a finding, indicating the absence of PAD.",
+      "SampleData": ["no", "without", "patent"]
+    }
+  ],
+  "Dataset": {
+    "Name": "Mayo Clinic Radiology Notes (PAD)",
+    "Description": "A manually annotated dataset of 455 radiology notes for PAD classification, used to train and evaluate a cTAKES-based NER system."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations used cTAKES with dictionaries created by cardiovascular specialists. Entities needed to form asserted relations (e.g., disorder + anatomical site + modifier) to determine PAD classification. Negation was also detected using cTAKES negation module. Examples include windowed relations and sentence-based matching.",
+    "Link": "http://www.ohnlp.org/"
+  }
+}

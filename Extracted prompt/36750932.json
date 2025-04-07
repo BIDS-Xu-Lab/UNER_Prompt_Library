@@ -1,0 +1,114 @@
+{
+  "Entities": [
+    {
+      "Name": "SEDATION",
+      "Definition": "Indicates whether sedation was administered during the procedure.",
+      "SampleData": "Sedation: Yes",
+      "Annotation": "Yes"
+    },
+    {
+      "Name": "SEDATIONLEVEL",
+      "Definition": "Describes the level of sedation used during the procedure.",
+      "SampleData": "Level of sedation: moderate",
+      "Annotation": "moderate"
+    },
+    {
+      "Name": "MEDICATION",
+      "Definition": "Names of drugs used for sedation or the procedure.",
+      "SampleData": "midazolam", 
+      "Annotation": "midazolam"
+    },
+    {
+      "Name": "DOSAGE",
+      "Definition": "The dosage amount of medications administered.",
+      "SampleData": "3 mg",
+      "Annotation": "3 mg"
+    },
+    {
+      "Name": "ANTISPASMODICS",
+      "Definition": "Indicates whether antispasmodic agents were used.",
+      "SampleData": "Antispasmodics (cimetropium 5 mg): Yes",
+      "Annotation": "Yes"
+    },
+    {
+      "Name": "DEVICE",
+      "Definition": "Endoscopic equipment used during the procedure.",
+      "SampleData": "The CF 260AI",
+      "Annotation": "CF 260AI"
+    },
+    {
+      "Name": "EXTENT",
+      "Definition": "Extent of the examination or the anatomical endpoint reached.",
+      "SampleData": "was inserted up to the terminal ileum",
+      "Annotation": "terminal ileum"
+    },
+    {
+      "Name": "PREPARATION",
+      "Definition": "Quality or adequacy of bowel preparation for visualization.",
+      "SampleData": "Bowel preparation was fair",
+      "Annotation": "fair"
+    },
+    {
+      "Name": "DRE",
+      "Definition": "Results of the digital rectal examination.",
+      "SampleData": "Digital rectal examination was normal",
+      "Annotation": "normal"
+    },
+    {
+      "Name": "LESION",
+      "Definition": "Mentions of abnormalities such as erosions, ulcers, or polyps.",
+      "SampleData": "erosions and shallow ulcer",
+      "Annotation": ["erosions", "ulcer"]
+    },
+    {
+      "Name": "NEGATION",
+      "Definition": "Expressions indicating the absence of lesions or abnormalities.",
+      "SampleData": "There was no mucosal lesion.",
+      "Annotation": "no mucosal lesion"
+    },
+    {
+      "Name": "LOCATION",
+      "Definition": "Anatomical location where findings were observed.",
+      "SampleData": "On the terminal ileum",
+      "Annotation": "terminal ileum"
+    },
+    {
+      "Name": "SHAPE",
+      "Definition": "Describes the morphological shape of the lesion.",
+      "SampleData": "Is polyp",
+      "Annotation": "Is"
+    },
+    {
+      "Name": "COLOR",
+      "Definition": "Color characteristic of the finding or lesion.",
+      "SampleData": "reddish mucosa",
+      "Annotation": "reddish"
+    },
+    {
+      "Name": "SIZE",
+      "Definition": "Measured size of the lesion or abnormality.",
+      "SampleData": "about 0.5 cm",
+      "Annotation": "0.5 cm"
+    },
+    {
+      "Name": "NUMBER",
+      "Definition": "Indicates the quantity of lesions or polyps found.",
+      "SampleData": "several",
+      "Annotation": "several"
+    },
+    {
+      "Name": "BIOPSY",
+      "Definition": "Whether biopsy was taken during the procedure.",
+      "SampleData": "biopsy +",
+      "Annotation": "biopsy +"
+    }
+  ],
+  "Dataset": {
+    "Name": "Samsung Medical Center Colonoscopy Report Corpus",
+    "Description": "A corpus of 280,668 colonoscopy reports (2000–2015), with 5,000 manually annotated for named entity recognition (NER). Annotations were performed using the DOCCANO tool, with input from clinical experts."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations were based on results from the DARWIN-C project using DOCCANO. Labels were assigned for both procedural information and colonoscopic findings. Discontinuous entities were handled by grouping or separating depending on structure. The output was formatted using IOB2.",
+    "Link": "https://github.com/dhseong/Deep-Learning-based-NLP-for-Colonoscopy"
+  }
+}

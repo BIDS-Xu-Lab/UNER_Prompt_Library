@@ -1,0 +1,36 @@
+{
+  "Entities": [
+    {
+      "Name": "Country",
+      "Definition": "Mentions of a patient's nation of origin or geographic ancestry.",
+      "SampleData": "Pt is recently immigrated from [France]",
+      "Annotation": "[France]"
+    },
+    {
+      "Name": "Language",
+      "Definition": "Discussions of the patient's primary, preferred, or spoken language.",
+      "SampleData": "Pt required a [Spanish] interpreter",
+      "Annotation": "[Spanish]"
+    },
+    {
+      "Name": "Race",
+      "Definition": "Direct references to U.S. Census-defined racial categories.",
+      "SampleData": "Pt is an elderly [American Indian] man",
+      "Annotation": "[American Indian]"
+    },
+    {
+      "Name": "Ethnicity",
+      "Definition": "Mentions of ethnicity based on U.S. standards (e.g., Latino/Latina).",
+      "SampleData": "Pt is 23 yo [Latino]",
+      "Annotation": "[Latino]"
+    }
+  ],
+  "Dataset": {
+    "Name": "C-REACT (Contextualized Race and Ethnicity Annotations for Clinical Text)",
+    "Description": "17,281 sentences from MIMIC-III discharge summaries were manually annotated for race and ethnicity indicators and sentence-level RE category labels by both non-clinicians and clinicians. Sentences span across 12,000 patients and 13,507 notes."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Two-stage annotation: (1) span-level annotations for RE indicators (country, language, race, ethnicity), and (2) sentence-level RE category assignments (e.g., Black/AA, Asian, white, Hispanic/Latino) based on federal guidelines. Non-clinicians handled indicator spans, clinicians handled sentence-level RE labels. Inter-annotator agreement for span annotations was macro F1 > 0.85. RE category labels were determined via majority vote across annotators.",
+    "Link": "https://physionet.org/content/race-ethnicity-clinical-text/1.0.0/data/"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "Entities": [
+    {
+      "Name": "Cancer Imaging Finding",
+      "Definition": "A radiologic observation suggestive of malignancy (e.g., mass, lesion, nodule) that is considered a candidate metastatic site.",
+      "SampleData": "New segment VI and segment II/III hepatic hypodense [lesions] are suspicious for metastases.",
+      "Annotation": "[lesions]"
+    },
+    {
+      "Name": "Anatomic Descriptor",
+      "Definition": "Modifiers of anatomical locations that provide spatial granularity (e.g., segments, lobes, quadrants).",
+      "SampleData": "New [segment VI] and [segment II/III] hepatic hypodense lesions are suspicious for metastases.",
+      "Annotation": "[segment VI]", "[segment II/III]"
+    },
+    {
+      "Name": "Body Part",
+      "Definition": "The organ or region of the body being described in the imaging report.",
+      "SampleData": "Stable [left upper lobe] metastasis.",
+      "Annotation": "[left upper lobe]"
+    },
+    {
+      "Name": "Assertion Status",
+      "Definition": "The level of certainty that a cancer imaging finding is metastatic, assigned as definite, probable, indeterminate, or low.",
+      "SampleData": "Stable left upper lobe metastasis [Assertion: definite].",
+      "Annotation": "[Assertion: definite]"
+    }
+  ],
+  "Dataset": {
+    "Name": "Singapore National Cancer Centre Radiology Report Corpus",
+    "Description": "Includes 4,522 de-identified CT radiology reports from 550 patients with 14 cancer types for model development. Extended to 53,838 CT reports from 6,555 patients for cohort analysis."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Entities were annotated using the INCEpTION platform. Assertion status was labeled using a 4-level Likert scale. A relation extraction (RE) model mapped relationships between cancer imaging findings and body parts. Postprocessing normalized anatomical terms into a set of 63 standardized terms (e.g., adrenal → adrenal gland).",
+    "Link": "https://github.com/nccsnlp/sites_of_metastases"
+  }
+}

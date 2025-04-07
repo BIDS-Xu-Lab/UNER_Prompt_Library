@@ -1,0 +1,44 @@
+{
+  "Entities": [
+    {
+      "Name": "Number of SDH",
+      "Definition": "Total number of subdural hematomas.",
+      "Sample Data": {
+        "Sentence": "Predominantly hyperdense subdural hematoma layering over the left cerebral convexity and left tentorium, measuring up to 15 mm in greatest diameter. There is also a small amount of subdural hemorrhage along the right tentorium and the falx.",
+        "Annotated": "subdural hematoma"
+      }
+    },
+    {
+      "Name": "Size of Midline Shift",
+      "Definition": "Presence and degree of midline shift (in millimeters).",
+      "Sample Data": {
+        "Sentence": "There is associated mass effect with effacement of the adjacent left cerebral sulci and left lateral ventricle and 6-mm of rightward midline shift.",
+        "Annotated": "6-mm of rightward midline shift"
+      }
+    },
+    {
+      "Name": "Thickness of Largest SDH (in millimeters)",
+      "Definition": "The thickest part of the largest SDH in millimeters.",
+      "Sample Data": {
+        "Sentence": "The component overlying the left cerebral convexity measures 11-mm and the tentorial component measures 15-mm.",
+        "Annotated": "11-mm", "15-mm"
+      }
+    },
+    {
+      "Name": "Side of Largest SDH",
+      "Definition": "The side of largest SDH.",
+      "Sample Data": {
+        "Sentence": "Predominantly hyperdense subdural hematoma layering over the left cerebral convexity and left tentorium, measuring up to 15 mm in greatest diameter.",
+        "Annotated": "left cerebral convexity"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "CT scan reports for subdural hematoma patients",
+    "Details": "The dataset consists of 643 cranial CT scan reports collected from a single center, annotated for the presence and characteristics of subdural hematoma."
+  },
+  "Annotation Guidelines": {
+    "Link": "https://github.com/NUNLP/NeuroNLP",
+    "Description": "The algorithm's code and pattern-matching approach used for extracting data from CT scan reports are available publicly under a general public license for non-commercial use."
+  }
+}

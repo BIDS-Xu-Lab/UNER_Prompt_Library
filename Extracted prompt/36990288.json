@@ -1,0 +1,59 @@
+{
+  "Entities": [
+    {
+      "Name": "Date",
+      "Definition": "A date of RT administration.",
+      "Sample Data": {
+        "Sentence": "",
+        "Annotated": ""
+      }
+    },
+    {
+      "Name": "Dose",
+      "Definition": "Any description of radiation dosage in the text, either the total dose or fractional doses, generally described using the unit gray (Gy) or centigray (cGy).",
+      "Sample Data": {
+        "Sentence": "The treatment plan was to deliver a total of 60 Gy in 30 fractions.",
+        "Annotated": "60 Gy"
+      }
+    },
+    {
+      "Name": "Fraction Number",
+      "Definition": "Fraction Number is any mention of the number of fractions delivered.",
+      "Sample Data": {
+        "Sentence": "The course consisted of 15 fractions over 3 weeks.",
+        "Annotated": "15 fractions"
+      }
+    },
+    {
+      "Name": "Fraction Frequency",
+      "Definition": "frequency of fraction delivery.",
+      "Sample Data": {
+        "Sentence": "",
+        "Annotated": ""
+      }
+    },
+    {
+      "Name": "Treatment Site",
+      "Definition": "the anatomic site, relative region, or RT volume or field.",
+      "Sample Data": {
+        "Sentence": "",
+        "Annotated": ""
+      }
+    },
+    {
+      "Name": "Boost",
+      "Definition": "A mention that conveys the treatment instance is a second phase of RT that brings a smaller treatment site to a higher dose.",
+      "Sample Data": {
+        "Sentence": "Dose-Boost: 1.8 Gy [23] --- boost [33].",
+        "Annotated": "boost [33]"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "Clinical Radiation Therapy Documents",
+    "Details": "A corpus of 495 documents from various sources including clinical notes and radiation therapy prescriptions, annotated for RT events and their properties."
+  },
+  "Annotation Guidelines": {
+    "Link": "https://github.com/Machine-Learning-for-Medical-Language/radiotherapy_end2end"
+  }
+}

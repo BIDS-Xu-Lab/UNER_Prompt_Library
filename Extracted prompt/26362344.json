@@ -1,0 +1,52 @@
+{
+  "Entities": [
+    {
+      "Name": "Diabetes",
+      "Definition": "Diabetes includes mentions, high A1c levels, and high glucose as indicators.",
+      "SampleData": "LDL measurement of over 100 mg/dL"
+    },
+    {
+      "Name": "CAD",
+      "Definition": "Coronary artery disease (CAD) includes mentions, events, test results, and symptoms.",
+      "SampleData": "Catheterization revealed his LAD stent was patent but he had a 90% lesion proximal to the stent"
+    },
+    {
+      "Name": "Hyperlipidemia",
+      "Definition": "Hyperlipidemia includes mentions, high cholesterol, and high LDL levels.",
+      "SampleData": "LDL measurement of over 100 mg/dL"
+    },
+    {
+      "Name": "Hypertension",
+      "Definition": "Hypertension includes mentions and high blood pressure (high BP).",
+      "SampleData": "BP 140/80"
+    },
+    {
+      "Name": "Obesity Status",
+      "Definition": "Obesity status includes mentions, BMI, and waist circumference.",
+      "SampleData": "Wt 276 lb"
+    },
+    {
+      "Name": "Family History",
+      "Definition": "Indicates whether a family history of heart disease is present or not present.",
+      "SampleData": "Early-onset CAD in mother"
+    },
+    {
+      "Name": "Smoking Status",
+      "Definition": "Smoking status includes classifications such as current, past, ever, never, or unknown.",
+      "SampleData": "(not explicitly shown, inferred from categories)"
+    },
+    {
+      "Name": "Medication",
+      "Definition": "Heart-disease-related drugs such as metoprolol and lorquess.",
+      "SampleData": "Continue beta blocker, CCB"
+    }
+  ],
+  "Dataset": {
+    "Name": "2014 i2b2 Clinical NLP Challenge Dataset (Track 2)",
+    "Description": "The dataset includes 1304 documents from 300 patients, manually annotated with risk factor tags. It is split into 790 documents for training (180 patients) and 514 documents for testing (120 patients). Tags identify presence and progression of diseases, medications, and risk factors over time."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Guidelines define tags and indicators for diseases, risk factors, and medications, as well as time attributes (‘before’, ‘during’, ‘after’).",
+    "Link": "http://www.sciencedirect.com/science/article/pii/S1532046415001857"
+  }
+}

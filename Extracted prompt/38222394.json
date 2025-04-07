@@ -1,0 +1,92 @@
+{
+  "Entities": [
+    {
+      "Name": "Thyroid nodule",
+      "Definition": "Mentions of thyroid nodules using various expressions, including references to size or location.",
+      "SampleData": ["thyroid nodule", "nodules", "highest scoring TI-RADS nodule(s)", "largest nodule"]
+    },
+    {
+      "Name": "Cervical lymph nodes",
+      "Definition": "Mentions of lymph nodes in the cervical region relevant to thyroid pathology.",
+      "SampleData": ["lymph nodes"]
+    },
+    {
+      "Name": "Size numeric",
+      "Definition": "Numerical descriptions of the size of thyroid nodules, typically in centimeters.",
+      "SampleData": ["2.2 x 1.2 x 3.2 cm", "> 1 cm", "between 1–2 cm"]
+    },
+    {
+      "Name": "Size qualitative",
+      "Definition": "Verbal, qualitative descriptions of thyroid nodule size.",
+      "SampleData": ["small", "large"]
+    },
+    {
+      "Name": "Laterality",
+      "Definition": "Describes the side or specific lobe of the thyroid where the nodule is located.",
+      "SampleData": ["right lower lobe", "upper left lobe", "isthmus"]
+    },
+    {
+      "Name": "Location",
+      "Definition": "Describes the positional location of a nodule within the thyroid structure.",
+      "SampleData": ["upper", "middle", "lower"]
+    },
+    {
+      "Name": "Composition",
+      "Definition": "Describes the fluid and solid content of the thyroid nodule.",
+      "SampleData": ["solid", "cystic", "purely cystic", "mostly cystic", "completely cystic", "spongiform", "mixed cystic and solid"]
+    },
+    {
+      "Name": "Echogenicity",
+      "Definition": "Describes the ultrasound brightness or reflectiveness of the nodule.",
+      "SampleData": ["hyperechoic", "isoechoic", "hypoechoic", "very hypoechoic", "can’t determine"]
+    },
+    {
+      "Name": "Margins",
+      "Definition": "Describes the boundary characteristics of the nodule.",
+      "SampleData": ["smooth", "ill defined", "lobulated", "irregular", "extra thyroidal extension", "well defined", "discrete", "poorly defined"]
+    },
+    {
+      "Name": "Shape",
+      "Definition": "Describes the general shape and axis relationship of the thyroid nodule.",
+      "SampleData": ["wider than tall", "taller than wider", "oval", "round"]
+    },
+    {
+      "Name": "Echogenic foci",
+      "Definition": "Mentions of calcifications or reflective artifacts within the nodule.",
+      "SampleData": ["comet tail artifact", "macrocalcification", "peripheral calcification", "rim calcification", "echogenic foci"]
+    },
+    {
+      "Name": "Vascularity",
+      "Definition": "Descriptions of blood flow within or around the thyroid nodule.",
+      "SampleData": ["high", "normal", "low vascularity", "increased vascularity", "decreased vascularity"]
+    },
+    {
+      "Name": "TIRADS Score",
+      "Definition": "Numeric risk score based on the ACR Thyroid Imaging Reporting and Data System (TI-RADS).",
+      "SampleData": ["TIR 1", "TIRADS 2", "ACR-TIRADS 5"]
+    },
+    {
+      "Name": "TIRADS risk category",
+      "Definition": "Categorical description of the TI-RADS risk level.",
+      "SampleData": ["low suspicion", "high suspicion"]
+    },
+    {
+      "Name": "Total number of nodules",
+      "Definition": "Mentions of how many thyroid nodules are present.",
+      "SampleData": ["multiple thyroid nodules"]
+    },
+    {
+      "Name": "Risk description",
+      "Definition": "Radiologist’s assessment of the potential malignancy or benign nature of the nodule.",
+      "SampleData": ["normal", "benign appearing", "suspicious", "concerning", "metastatic", "malignant"]
+    }
+  ],
+  "Dataset": {
+    "Name": "UF Health Thyroid Ultrasound Report Corpus",
+    "Description": "Annotated corpus of 490 thyroid ultrasound reports from UF Health used for training transformer-based NER models to extract 16 clinically relevant thyroid nodule characteristics and 27 relations."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotation guidelines were created by thyroid specialists and NLP experts. Entities were labeled using a BIO format and relationships were annotated between nodules and their characteristics. Discrepancies and difficult cases were handled using an iterative panel review process.",
+    "Link": "https://doi.org/10.1093/jamiaopen/ooad054"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "Entities": [
+    {
+      "Name": "Hormone Receptor Type",
+      "Definition": "Refers to the type of hormone receptor (e.g., HER2, estrogen receptor) expressed by the cancer cells.",
+      "Sample Data": {
+        "Sentence": "HER2 gene was amplified; estrogen receptor: positive (95%, strong staining); tumor is PR negative (0% staining).",
+        "Annotated": "Hormone Receptor Type: HER2 amplified, estrogen receptor positive, PR negative"
+      }
+    },
+    {
+      "Name": "Tumor Size",
+      "Definition": "The physical dimensions of the tumor measured in clinical assessments.",
+      "Sample Data": {
+        "Sentence": "Tumor size: 1.0×0.5×0.7 cm.",
+        "Annotated": "Tumor Size: 1.0×0.5×0.7 cm"
+      }
+    },
+    {
+      "Name": "Tumor Site",
+      "Definition": "The specific location within the body or organ where the tumor is located.",
+      "Sample Data": {
+        "Sentence": "Tumor is at 12 o’clock position and 2 cm from the nipple.",
+        "Annotated": "Tumor Site: 12 o’clock position, 2 cm from nipple"
+      }
+    },
+    {
+      "Name": "Cancer Grade",
+      "Definition": "A classification that describes the aggressiveness of the cancer, often denoted numerically.",
+      "Sample Data": {
+        "Sentence": "Histologic grade: 1 of 3; Sample shows Nottingham grade 2 lesions.",
+        "Annotated": "Cancer Grade: Grade 1, Nottingham grade 2"
+      }
+    },
+    {
+      "Name": "Histological Type",
+      "Definition": "The type of tissue from which the cancer originated, as observed under a microscope.",
+      "Sample Data": {
+        "Sentence": "Histologic type of invasive carcinoma: ductal carcinoma in situ.",
+        "Annotated": "Histological Type: ductal carcinoma in situ"
+      }
+    },
+    {
+      "Name": "Tumor Laterality",
+      "Definition": "Indicates which side of the body the tumor is located, such as left, right, or bilateral.",
+      "Sample Data": {
+        "Sentence": "Specimen laterality: right breast; Laterality: left tumor",
+        "Annotated": "Tumor Laterality: right breast, left tumor"
+      }
+    },
+    {
+      "Name": "Cancer Stage",
+      "Definition": "The stage of the cancer, which often includes TNM staging to describe the size of the tumor, the degree of spread to the lymph nodes, and the presence of metastasis.",
+      "Sample Data": {
+        "Sentence": "Pathologic stage is pT4 NX MX.",
+        "Annotated": "Cancer Stage: pT4 NX MX"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "Breast Cancer Clinical Notes",
+    "Details": "Consists of 200 pathology reports and 50 clinical notes, containing detailed annotations of breast cancer phenotypes."
+  },
+  "Annotation Guidelines": {
+    "Description": "Guidelines developed through iterative discussions among clinical experts, utilizing INCEpTION as the annotation tool. Annotations focus on key phenotypes of breast cancer as per clinical reporting standards.",
+    "Link": "The guideline document or specific link was not mentioned directly, but more information can be found through the corresponding author or by accessing supplementary materials via the provided DOI link in the reference section."
+  }
+}

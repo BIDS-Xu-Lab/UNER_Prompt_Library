@@ -1,0 +1,48 @@
+{
+  "Entities": [
+    {
+      "Name": "Protein",
+      "Definition": "Names of proteins that participate in biological functions, commonly appearing in biomedical literature. Includes single proteins and protein complexes.",
+      "SampleData": "Octamer-binding proteins",
+      "Annotation": "Octamer-binding proteins"
+    },
+    {
+      "Name": "DNA",
+      "Definition": "Names of DNA sequences, including genes or parts of the genome that are relevant in biomedical processes.",
+      "SampleData": "NFAT gene",
+      "Annotation": "NFAT gene"
+    },
+    {
+      "Name": "RNA",
+      "Definition": "Mentions of RNA sequences, including mRNA, miRNA, and other forms of transcribed genetic material.",
+      "SampleData": "TGF-beta1 mRNA",
+      "Annotation": "TGF-beta1 mRNA"
+    },
+    {
+      "Name": "Cell line",
+      "Definition": "References to specific cell lines used in research or clinical contexts, often used in experimental studies.",
+      "SampleData": "HeLa cells",
+      "Annotation": "HeLa cells"
+    },
+    {
+      "Name": "Cell type",
+      "Definition": "Biological cell types categorized based on structure or function, such as immune cells, epithelial cells, etc.",
+      "SampleData": "T lymphoblasts",
+      "Annotation": "T lymphoblasts"
+    },
+    {
+      "Name": "Disease",
+      "Definition": "Medical conditions identified in biomedical text, including genetic disorders, infections, and syndromes.",
+      "SampleData": "Hemochromatosis",
+      "Annotation": "Hemochromatosis"
+    }
+  ],
+  "Dataset": {
+    "Name": "JNLPBA and NCBI-Disease",
+    "Description": "Two benchmark datasets for biomedical NER. JNLPBA contains 22,402 sentences with five biomedical entity types. NCBI-Disease consists of 793 abstracts annotated for disease mentions."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations in JNLPBA follow the GENIA guidelines, where each entity must be a full phrase with a BIO-tagging scheme. NCBI-Disease entities are annotated for disease names normalized to MEDIC terms. Evaluation is based on exact span-level matches.",
+    "Link": "https://www.ncbi.nlm.nih.gov/CBBresearch/Dogan/DISEASE/ and https://www.geniaproject.org/genia-corpus"
+  }
+}

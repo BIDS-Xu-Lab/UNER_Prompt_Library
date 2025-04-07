@@ -1,0 +1,47 @@
+{
+  "Entities": [
+    {
+      "Name": "Observation",
+      "Definition": "Specific terms representing abnormal features in radiology images, such as lesions and opacities.",
+      "SampleData": ["nodule", "mass", "ground-glass opacity"]
+    },
+    {
+      "Name": "Clinical finding",
+      "Definition": "Terms that express diagnoses or suspected conditions, typically interpreted from observation entities by radiologists.",
+      "SampleData": ["lung cancer", "emphysema"]
+    },
+    {
+      "Name": "Anatomical location modifier",
+      "Definition": "Locations or anatomical descriptors related to observations or findings.",
+      "SampleData": ["right lung", "left lung S1+2", "lymph node"]
+    },
+    {
+      "Name": "Certainty modifier",
+      "Definition": "Modifiers that describe the degree of certainty regarding the observation or finding.",
+      "SampleData": ["uncertain", "no", "definite"]
+    },
+    {
+      "Name": "Change modifier",
+      "Definition": "Terms indicating temporal progression or status change of a finding.",
+      "SampleData": ["unchanged", "increased", "advanced"]
+    },
+    {
+      "Name": "Characteristics modifier",
+      "Definition": "Modifiers that describe shape, texture, or other qualities of an observation.",
+      "SampleData": ["diffuse", "coarse", "flattened", "irregular"]
+    },
+    {
+      "Name": "Size modifier",
+      "Definition": "Quantitative descriptors of size for clinical observations.",
+      "SampleData": ["4 mm", "3.0 cm", "30 × 14 mm"]
+    }
+  ],
+  "Dataset": {
+    "Name": "Osaka University Hospital Chest CT Report Corpus",
+    "Description": "540 annotated Japanese chest CT radiology reports from Osaka University Hospital. Used for training and evaluating NER models, with external validation on 77 reports from Osaka International Cancer Institute."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Three medical experts annotated each report using an in-house guideline based on RadLex terminology. Entities were labeled using IOB2 format in the TALEN annotation tool. Disagreements were resolved by majority vote and adjudicated by a clinician.",
+    "Link": "https://doi.org/10.1016/j.jbi.2021.103729"
+  }
+}

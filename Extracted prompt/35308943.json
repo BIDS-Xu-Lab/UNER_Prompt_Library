@@ -1,0 +1,52 @@
+{
+  "Entities": [
+    {
+      "Name": "Drug",
+      "Definition": "Name of the ophthalmologic medication, including generic, brand, and abbreviations.",
+      "SampleData": ["latanoprost", "brimonidine", "PFATs"]
+    },
+    {
+      "Name": "Frequency",
+      "Definition": "How often the drug should be administered.",
+      "SampleData": ["BID", "once daily", "every 6 hours"]
+    },
+    {
+      "Name": "Route",
+      "Definition": "The method by which the medication is administered.",
+      "SampleData": ["OU", "OS", "OD", "topical", "oral"]
+    },
+    {
+      "Name": "Dosage",
+      "Definition": "The quantity of medication to be administered at a time.",
+      "SampleData": ["1 drop", "2 drops", "1 tab"]
+    },
+    {
+      "Name": "Duration",
+      "Definition": "The length of time over which the medication is taken.",
+      "SampleData": ["for 1 week", "ongoing"]
+    },
+    {
+      "Name": "Strength",
+      "Definition": "Concentration or strength of the drug.",
+      "SampleData": ["0.5%", "250 mg"]
+    },
+    {
+      "Name": "Adherence",
+      "Definition": "Patient-reported or clinician-observed medication adherence behavior.",
+      "SampleData": ["frequently forgets drops", "inconsistent drop adherence"]
+    },
+    {
+      "Name": "Current Medication Use",
+      "Definition": "Mentions of medications the patient is actively using at the time of the encounter.",
+      "SampleData": ["currently on brimonidine", "using PFATs", "patient takes latanoprost"]
+    }
+  ],
+  "Dataset": {
+    "Name": "Casey Eye Institute Glaucoma Progress Notes Dataset",
+    "Description": "507 manually annotated ophthalmology progress notes from Casey Eye Institute (OHSU), specifically focused on glaucoma patient visits. Notes were annotated for 8 entity types related to medication and adherence."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotation was done using Doccano. Annotators labeled medication names, dosage, route, frequency, duration, strength, adherence, and current medication use based on free-text narratives. RxNorm was used to normalize medication names for reconciliation. BIO tagging was used for model training.",
+    "Link": "https://github.com/doccano/doccano"
+  }
+}

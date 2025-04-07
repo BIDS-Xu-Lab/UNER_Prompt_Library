@@ -1,0 +1,41 @@
+{
+  "Entities": [
+    {
+      "Name": "Disease",
+      "Definition": "Mentions of medical conditions or diagnoses extracted from clinical trials and patient records. Each disease entity is classified by assertion (affirmative or negated) and temporal category (current, past, family history).",
+      "SampleData": [
+        "Tinea pedis infection",
+        "DM",
+        "myasthenia gravis",
+        "shortness of breath",
+        "hyperlipidemia"
+      ],
+      "Annotation": {
+        "affirmative_current": ["Tinea pedis infection"],
+        "negated_past": ["DM"],
+        "negated_past (tokenized)": ["pmc_no_myasthenia_gravis", "pmc_no_shortness_of_breath"],
+        "family": ["hyperlipidemia"]
+      }
+    },
+    {
+      "Name": "Drug",
+      "Definition": "Mentions of pharmacological substances or treatments mentioned in patient descriptions or trial eligibility criteria. Entities are categorized similarly as diseases.",
+      "SampleData": [
+        "ant topical ointment",
+        "metformin",
+        "prednisone"
+      ],
+      "Annotation": {
+        "negated_current": ["ant topical ointment"]
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "TREC Clinical Trials (2021 & 2022)",
+    "Description": "A benchmark dataset containing 375,580 clinical trial documents and 125 patient topics (75 in 2021 and 50 in 2022). Trials are sourced from ClinicalTrials.gov and annotated for relevance to each patient description."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Entity extraction is performed using ScispaCy and medspaCy libraries. Disease and drug mentions are detected using spaCy’s NER models trained on biomedical corpora (bc5cdr). Negation detection is handled using the ConText algorithm to determine if entities are affirmative or negated. Entities are categorized into current, past, and family history using rule-based section classification.",
+    "Link": "https://github.com/ProjectDossier/patient-trial-matching"
+  }
+}

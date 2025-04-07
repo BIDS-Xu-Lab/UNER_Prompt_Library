@@ -1,0 +1,54 @@
+{
+  "Entities": [
+    {
+      "Name": "Medication Name",
+      "Definition": "Name of the medication, including brand names, generic names, abbreviations, or co-references.",
+      "SampleData": "regular insulin",
+      "Annotation": "regular insulin"
+    },
+    {
+      "Name": "Dosage",
+      "Definition": "The amount of medication to be administered, often numeric with units.",
+      "SampleData": "0.5 mg",
+      "Annotation": "0.5 mg"
+    },
+    {
+      "Name": "Frequency",
+      "Definition": "How often the medication should be taken, described in terms like 'q3h' or 'daily'.",
+      "SampleData": "every 3 hour",
+      "Annotation": "every 3 hour"
+    },
+    {
+      "Name": "Mode/Route",
+      "Definition": "The method by which the medication is administered (e.g., oral, sublingual).",
+      "SampleData": "po",
+      "Annotation": "po"
+    },
+    {
+      "Name": "Duration",
+      "Definition": "How long the medication should be taken, expressed in numeric (e.g., 10 days) or non-numeric forms.",
+      "SampleData": "through May",
+      "Annotation": "through May"
+    },
+    {
+      "Name": "Reason",
+      "Definition": "The clinical justification or diagnosis for prescribing the medication.",
+      "SampleData": "for ten years",
+      "Annotation": "for ten years"
+    },
+    {
+      "Name": "List/Narrative",
+      "Definition": "Indicates whether the medication appears in a structured list or within a narrative sentence.",
+      "SampleData": "medications included . . .",
+      "Annotation": "medications included"
+    }
+  ],
+  "Dataset": {
+    "Name": "2009 i2b2 Medication Extraction Challenge Dataset",
+    "Description": "Hospital discharge summaries annotated for medication information. A total of 696 discharge summaries were released for development, with 17 annotated samples and 547 for test. 251 documents were manually re-annotated for evaluation after the competition."
+  },
+  "AnnotationGuidelines": {
+    "Description": "The i2b2 challenge provided guidelines for identifying seven medication constituents (medication name, dosage, frequency, mode/route, duration, reason, list/narrative). Annotated terms must appear within a ±2 line window of the medication name. Negation, allergy, and family mentions were to be excluded.",
+    "Link": "https://www.i2b2.org/NLP/Medication/"
+  }
+}

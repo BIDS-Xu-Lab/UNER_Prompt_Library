@@ -1,0 +1,97 @@
+{
+  "Entities": [
+    {
+      "Name": "Housing",
+      "Definition": "Patient’s living situation and housing conditions.",
+      "Sample Data": [
+        "Homeless",
+        "Housing Instability",
+        "Housing Quality"
+      ]
+    },
+    {
+      "Name": "Food",
+      "Definition": "Patient’s access to sufficient and nutritious food.",
+      "Sample Data": [
+        "Food Insecurity"
+      ]
+    },
+    {
+      "Name": "Transportation",
+      "Definition": "Patient’s access to reliable transportation.",
+      "Sample Data": [
+        "Transportation Access"
+      ]
+    },
+    {
+      "Name": "Finances",
+      "Definition": "Patient’s financial resources and economic stability.",
+      "Sample Data": [
+        "Employment",
+        "Difficulty Paying",
+        "Insurance Coverage"
+      ]
+    },
+    {
+      "Name": "Social Support",
+      "Definition": "Presence or absence of supportive social relationships.",
+      "Sample Data": [
+        "Lack of Social Support",
+        "Lives Alone",
+        "Lives With",
+        "Has Social Support"
+      ]
+    },
+    {
+      "Name": "Marital and Partnership Status",
+      "Definition": "Patient’s current relationship or marital status.",
+      "Sample Data": [
+        "Married",
+        "Unmarried",
+        "Separated/Divorced",
+        "Widowed",
+        "Partnership"
+      ]
+    },
+    {
+      "Name": "Depression",
+      "Definition": "Mentions of depressive symptoms or diagnosis.",
+      "Sample Data": [
+        "Depressive Symptoms",
+        "Depression Diagnosis"
+      ]
+    },
+    {
+      "Name": "Anxiety",
+      "Definition": "Mentions of anxiety symptoms or diagnosis.",
+      "Sample Data": [
+        "Anxiety Symptoms",
+        "Anxiety Diagnosis"
+      ]
+    },
+    {
+      "Name": "Pain Scores",
+      "Definition": "Reported or documented pain levels or scores.",
+      "Sample Data": [
+        "Pain Score"
+      ]
+    },
+    {
+      "Name": "Insurance Status",
+      "Definition": "Presence or absence of health insurance coverage.",
+      "Sample Data": [
+        "Has Insurance",
+        "No Insurance",
+        "Unclear"
+      ]
+    }
+  ],
+  "Dataset": {
+    "Name": "Annotated Clinical Notes of cLBP Patients at UCSF",
+    "Description": "A corpus of 1576 clinical notes from UCSF patients with chronic lower back pain (cLBP), annotated for social determinants of health (SDoH), behavioral health, and pain information."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations were conducted using MAE software based on a two-level taxonomy of 10 domains and 52 subcategories. Each span in the text corresponding to SDoH was labeled with a first- and second-level category. Ambiguous or rare cases were labeled as 'NA'.",
+    "Link": "https://github.com/BCHSI/social-determinants-of-health-clbp"
+  }
+}

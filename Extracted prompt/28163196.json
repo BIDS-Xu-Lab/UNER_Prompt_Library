@@ -1,0 +1,32 @@
+{
+  "Entities": [
+    {
+      "Name": "LVEF Mention",
+      "Definition": "Mentions of left ventricular ejection fraction in clinical text. These include standard forms and abbreviations such as 'EF' or full phrases like 'left ventricular ejection fraction'.",
+      "SampleData": ["left ventricular ejection fraction", "EF", "VISUAL ESTIMATE OF LVEF"]
+    },
+    {
+      "Name": "LVSF Mention",
+      "Definition": "Mentions of left ventricular systolic function. This category includes general references to systolic function or dysfunction.",
+      "SampleData": ["Global left ventricular systolic function", "systolic dysfunction", "LVSF"]
+    },
+    {
+      "Name": "LVSF Qualitative Value",
+      "Definition": "Descriptive, qualitative assessments of LVSF measurements.",
+      "SampleData": ["NORMAL", "mildly decreased", "SEVERE"]
+    },
+    {
+      "Name": "LVEF Quantitative Value",
+      "Definition": "Numerical values or ranges that quantify LVEF measurements.",
+      "SampleData": ["0.45", "50%", "≈0.60–0.65", "range of 50% to 55%"]
+    }
+  ],
+  "Dataset": {
+    "Name": "TUCP EF Year 3 Corpus",
+    "Description": "A collection of 3060 VA clinical reports (Echocardiography, Radiology, TIU), with 1465 annotated for LVEF information using a standardized schema. The corpus was used to train and evaluate new sequence-tagging models."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Clinical notes were annotated using a BIO-tag format. Concepts were annotated by two independent reviewers and adjudicated by a domain expert. Special attention was paid to ensure consistent term boundary definitions across corpora. Distinctions between LVEF and LVSF mentions were emphasized in the TUCP EF Year 3 schema.",
+    "Link": "http://dx.doi.org/10.1016/j.jbi.2017.01.017"
+  }
+}

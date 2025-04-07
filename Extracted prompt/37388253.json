@@ -1,0 +1,51 @@
+{
+  "Entities": [
+    {
+      "Name": "Diagnosis",
+      "Definition": "Diagnosis relevant for thrombolysis decisions, such as 'ischaemic stroke' or 'haemorrhage'.",
+      "Sample Data": {
+        "Sentence": "CT head showed a small LHS basal ganalia ICH.",
+        "Annotated": "LHS basal ganalia ICH"
+      }
+    },
+    {
+      "Name": "Symptom",
+      "Definition": "Symptoms relevant to stroke and thrombolysis treatment, like 'speech disturbance' or 'weakness'.",
+      "Sample Data": {
+        "Sentence": "This 70 year old lady, on warfarin for AF, was admitted with dysphasia.",
+        "Annotated": "dysphasia"
+      }
+    },
+    {
+      "Name": "Social History",
+      "Definition": "Social history such as smoking or alcohol use.",
+      "Sample Data": {
+        "Sentence": "Patient is a long-term smoker.",
+        "Annotated": "smoker"
+      }
+    },
+    {
+      "Name": "Medication",
+      "Definition": "Medication mentioned, such as anticoagulants.",
+      "Sample Data": {
+        "Sentence": "This 70 year old lady, on warfarin for AF, was admitted with dysphasia.",
+        "Annotated": "warfarin"
+      }
+    },
+    {
+      "Name": "Treatment",
+      "Definition": "Any treatments which might affect eligibility for thrombolysis.",
+      "Sample Data": {
+        "Sentence": "Require surgical-procedure.",
+        "Annotated": "surgical-procedure"
+      }
+    }
+  ],
+  "Dataset": {
+    "Name": "Clinical Letters for Stroke Patients",
+    "Details": "Dataset contains 8,067 clinical letters from 2,912 patients, annotated for factors affecting thrombolysis decisions in stroke treatment."
+  },
+  "Annotation Guidelines": {
+    "Link": "Supplemental materials or specific links to annotation guidelines were not mentioned directly in the document."
+  }
+}

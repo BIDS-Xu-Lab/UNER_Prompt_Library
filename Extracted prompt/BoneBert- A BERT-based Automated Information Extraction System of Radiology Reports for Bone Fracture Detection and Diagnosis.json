@@ -1,0 +1,26 @@
+{
+  "Entities": [
+    {
+      "Name": "Type",
+      "Definition": "Type of bone fracture.",
+      "Sample Data": "healing"
+    },
+    {
+      "Name": "Bone",
+      "Definition": "The specific bone that is fractured.",
+      "Sample Data": "right, fibula"
+    },
+    {
+      "Name": "Bone Part",
+      "Definition": "Specific part of the bone where the fracture occurs.",
+      "Sample Data": "neck"
+    }
+  ],
+  "Dataset": {
+    "Name": "Bone X-ray Radiology Reports",
+    "Details": "13,712 reports from the UK, annotated for bone fracture status, type, and location, with a focus on ensuring no study overlaps between training, validation, and test sets."
+  },
+  "Annotation Guidelines": {
+    "Link": "Not provided in the document; guidelines appear to be internal to the research group."
+  }
+}

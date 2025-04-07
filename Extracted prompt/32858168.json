@@ -1,0 +1,117 @@
+{
+  "Entities": [
+    {
+      "Name": "Attribute",
+      "Definition": "Descriptors for clinical findings or procedures such as quality or state (e.g., left, hard, weak).",
+      "SampleData": "assisted, weak, hard"
+    },
+    {
+      "Name": "Qualifier/Temporal Modifier",
+      "Definition": "Modifiers that indicate timing, degree, or negation (e.g., strong, frequent, not).",
+      "SampleData": "no, full, frequent, broken"
+    },
+    {
+      "Name": "Fraction",
+      "Definition": "Expressions indicating ratio or frequency terms like 'per', '/' or 'every'.",
+      "SampleData": "per, /, every"
+    },
+    {
+      "Name": "Patient",
+      "Definition": "Mentions of the patient or aliases used to refer to the patient.",
+      "SampleData": "patint, mama, ms."
+    },
+    {
+      "Name": "Time unit",
+      "Definition": "Units of time relevant to clinical documentation.",
+      "SampleData": "week, day, hour, min"
+    },
+    {
+      "Name": "Medication",
+      "Definition": "Medications mentioned, including brand names and generics.",
+      "SampleData": "dafalgan, diclofenac, oxytocine"
+    },
+    {
+      "Name": "Medical Test/Procedure",
+      "Definition": "Tests or procedures such as CTG, blood tests, etc.",
+      "SampleData": "ctg, vaginal examination, glycemie"
+    },
+    {
+      "Name": "Cervix",
+      "Definition": "Mentions of cervix, abbreviated or full forms.",
+      "SampleData": "cervix, cx"
+    },
+    {
+      "Name": "Range",
+      "Definition": "Phrases indicating a range, such as from–to.",
+      "SampleData": "ranging from, between"
+    },
+    {
+      "Name": "Complaint/Pain",
+      "Definition": "Mentions of patient discomfort or pain.",
+      "SampleData": "pain, tired, complaints"
+    },
+    {
+      "Name": "Blood Loss",
+      "Definition": "Mentions of vaginal or general blood loss.",
+      "SampleData": "vag bvl, bloodloss"
+    },
+    {
+      "Name": "Amniotic Fluid Loss",
+      "Definition": "Mentions of amniotic fluid discharge or loss.",
+      "SampleData": "vwv, amniotic fluid loss"
+    },
+    {
+      "Name": "Length Unit",
+      "Definition": "Units of length such as centimeters or fingers.",
+      "SampleData": "cm, mm, fingers"
+    },
+    {
+      "Name": "Mass Unit",
+      "Definition": "Units of mass or weight.",
+      "SampleData": "kg, g, lepels"
+    },
+    {
+      "Name": "Baby",
+      "Definition": "Mentions of the fetus, child, or baby.",
+      "SampleData": "baby, child, son"
+    },
+    {
+      "Name": "Sleep",
+      "Definition": "Mentions of rest, naps, or sleep.",
+      "SampleData": "resting, sleep, nap"
+    },
+    {
+      "Name": "Contractions",
+      "Definition": "Mentions of uterine activity or contractions.",
+      "SampleData": "contractions, cramps, hb"
+    },
+    {
+      "Name": "Volume Unit",
+      "Definition": "Units indicating volume.",
+      "SampleData": "ml, l, cc"
+    },
+    {
+      "Name": "Way of Application",
+      "Definition": "Drug administration routes such as oral or IV.",
+      "SampleData": "oral, intravenous, vaginal"
+    },
+    {
+      "Name": "Condition",
+      "Definition": "Medical conditions like diabetes or HIV.",
+      "SampleData": "HIV, diabetes gravidarum"
+    },
+    {
+      "Name": "Cardinal Numbers",
+      "Definition": "Written or numeric cardinal values.",
+      "SampleData": "seventy-nine, fifteen"
+    }
+  ],
+  "Dataset": {
+    "Name": "PRETURN Dataset",
+    "Description": "Free-text and semi-structured medical notes from 949 pregnancies (24–37 weeks gestation) collected at Ghent University Hospital. Includes 3381 annotated notes with 13,105 clinical concept mentions."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Clinical entities were annotated using a custom ontology optimized for preterm birth risk prediction. Weak and strong supervision were used, with mappings to UMLS CUIs and bootstrapped from seed terms and word embeddings. spaCy and rule-based grammar patterns were used for extraction and semantic parsing.",
+    "Link": "No direct link provided, but based on internal tools and UMLS mapping."
+  }
+}

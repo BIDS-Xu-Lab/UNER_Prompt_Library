@@ -1,0 +1,121 @@
+{
+  "Entities": [
+    {
+      "Name": "Alcohol Use - Amount",
+      "Definition": "How much a substance used.",
+      "SampleData": "Few glasses wine/day",
+      "Annotation": "Few glasses"
+    },
+    {
+      "Name": "Alcohol Use - Status",
+      "Definition": "The patient’s current or past alcohol use condition.",
+      "SampleData": "current drinker",
+      "Annotation": "current drinker"
+    },
+    {
+      "Name": "Alcohol Use - Type",
+      "Definition": "The type of alcohol consumed.",
+      "SampleData": "Few glasses wine/day",
+      "Annotation": "wine"
+    },
+    {
+      "Name": "Alcohol Use - Frequency",
+      "Definition": "The frequency of alcohol consumption.",
+      "SampleData": "one every 2 months",
+      "Annotation": "every 2 months"
+    },
+    {
+      "Name": "Alcohol Use - Method",
+      "Definition": "How substance used or how exposed.",
+      "SampleData": "drinks wine",
+      "Annotation": "drinks"
+    },
+    {
+      "Name": "Alcohol Use - Temporal",
+      "Definition": "Temporal information e.g., date started, age started, date quit and duration of use.",
+      "SampleData": "started drinking in 1985",
+      "Annotation": "1985"
+    },
+    {
+      "Name": "Drug Use - Amount",
+      "Definition": "How much a substance used.",
+      "SampleData": "<1 joint QOD for pain",
+      "Annotation": "<1 joint"
+    },
+    {
+      "Name": "Drug Use - Status",
+      "Definition": "The patient’s current or past drug use condition.",
+      "SampleData": "History of drug abuse",
+      "Annotation": "History"
+    },
+    {
+      "Name": "Drug Use - Type",
+      "Definition": "The type of drug used.",
+      "SampleData": "Used OxyContin prescribed to mother",
+      "Annotation": "OxyContin"
+    },
+    {
+      "Name": "Drug Use - Frequency",
+      "Definition": "The frequency of drug use.",
+      "SampleData": "Marijuana 2x/week",
+      "Annotation": "2x/week"
+    },
+    {
+      "Name": "Drug Use - Method",
+      "Definition": "How the drug was taken.",
+      "SampleData": "Injected heroin for years",
+      "Annotation": "Injected"
+    },
+    {
+      "Name": "Drug Use - Temporal",
+      "Definition": "Temporal information e.g., date started, age started, date quit and duration of use.",
+      "SampleData": "methadone 2007 stopped",
+      "Annotation": "2007"
+    },
+    {
+      "Name": "Nicotine Use - Amount",
+      "Definition": "How much a substance used.",
+      "SampleData": "1-2 cigarettes/day",
+      "Annotation": "1-2"
+    },
+    {
+      "Name": "Nicotine Use - Status",
+      "Definition": "The patient’s current or past nicotine use condition.",
+      "SampleData": "Current tobacco",
+      "Annotation": "Current"
+    },
+    {
+      "Name": "Nicotine Use - Type",
+      "Definition": "The type of nicotine product used.",
+      "SampleData": "Smoked pipes and cigars",
+      "Annotation": "pipes and cigars"
+    },
+    {
+      "Name": "Nicotine Use - Frequency",
+      "Definition": "The frequency of nicotine use.",
+      "SampleData": "a pack per week",
+      "Annotation": "per week"
+    },
+    {
+      "Name": "Nicotine Use - Method",
+      "Definition": "How nicotine was consumed or exposure occurred.",
+      "SampleData": "secondhand smoke exposure",
+      "Annotation": "exposure"
+    },
+    {
+      "Name": "Nicotine Use - Temporal",
+      "Definition": "Temporal information e.g., date started, age started, date quit and duration of use.",
+      "SampleData": "Smoked for 4-5 yrs",
+      "Annotation": "4-5 yrs"
+    }
+  ],
+  "Dataset": {
+    "Name": "MTSamples and UPMC Clinical Notes",
+    "Description": "Annotated clinical notes for substance use information: MTSamples (491 history & physical notes) used for development and annotation, and UPMC (200 de-identified notes) used as evaluation set."
+    }
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations included six elements (amount, status, type, frequency, method, temporal) for alcohol, drug, and nicotine use. These were extracted using syntactic rules, dependency parsing, and lexicons from multi-site sources, Propbank, and MiPACQ.",
+    "Link": "No official URL provided in the paper, but annotation tools and resources used include BRAT (http://brat.nlplab.org), GATE (https://gate.ac.uk), PropBank (https://propbank.github.io/), and MiPACQ."
+  }
+}

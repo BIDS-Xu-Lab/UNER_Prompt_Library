@@ -1,0 +1,210 @@
+{
+  "Entities": [
+    {
+      "Name": "Drug screening",
+      "Definition": "Drug screening results by type and result (e.g., opioid/non-opioid, positive/negative).",
+      "SampleData": "Toxicology screen [positive for benzos and opiates].",
+      "Annotation": "[positive for benzos and opiates]"
+    },
+    {
+      "Name": "Interpersonal and legal consequences",
+      "Definition": "Consequences of opioid use related to relationships or legal issues.",
+      "SampleData": "Was [arrested last Tuesday for possession of drug].",
+      "Annotation": "[arrested last Tuesday for possession of drug]"
+    },
+    {
+      "Name": "Opioid abuse uncertain",
+      "Definition": "Possible but unclear indication of opioid misuse.",
+      "SampleData": "Question of [possible heroin use prior to the accident].",
+      "Annotation": "[possible heroin use prior to the accident]"
+    },
+    {
+      "Name": "Opioid dependency indicator",
+      "Definition": "Signs of opioid dependency such as withdrawal, craving, or tolerance.",
+      "SampleData": "Patient in [acute opiate withdrawal].",
+      "Annotation": "[acute opiate withdrawal]"
+    },
+    {
+      "Name": "Opioid illicit use",
+      "Definition": "Recent or ongoing illicit opioid use.",
+      "SampleData": "Patient [admits to using heroin].",
+      "Annotation": "[admits to using heroin]"
+    },
+    {
+      "Name": "Opioid past illicit use",
+      "Definition": "Historical illicit opioid use.",
+      "SampleData": "History of [IV heroin use].",
+      "Annotation": "[IV heroin use]"
+    },
+    {
+      "Name": "Opioid reduction successful",
+      "Definition": "Successful attempt to reduce or control opioid use.",
+      "SampleData": "Weaned himself down to [3–4 mg PO].",
+      "Annotation": "[3–4 mg PO]"
+    },
+    {
+      "Name": "Opioid reduction unsuccessful",
+      "Definition": "Unsuccessful effort to reduce opioid use.",
+      "SampleData": "[No examples identified]",
+      "Annotation": null
+    },
+    {
+      "Name": "Opioid seeking",
+      "Definition": "Behavior indicative of opioid-seeking (e.g., lost meds, using others' prescriptions).",
+      "SampleData": "Reported [taking husband’s methadone for headaches].",
+      "Annotation": "[taking husband’s methadone for headaches]"
+    },
+    {
+      "Name": "Opioid type",
+      "Definition": "Mention of a specific opioid name.",
+      "SampleData": "[Methadone]",
+      "Annotation": "[Methadone]"
+    },
+    {
+      "Name": "Opioid use underspecified",
+      "Definition": "Opioid use described without context to determine legitimacy.",
+      "SampleData": "[Chronic use of opiate].",
+      "Annotation": "[Chronic use of opiate]"
+    },
+    {
+      "Name": "Other contexts",
+      "Definition": "Miscellaneous information relevant to opioid use disorder.",
+      "SampleData": "Pt returned after overdose with complicated comorbidities.",
+      "Annotation": "[overdose with complicated comorbidities]"
+    },
+    {
+      "Name": "Other drug use",
+      "Definition": "Use of non-opioid addictive substances (tobacco, alcohol, cocaine).",
+      "SampleData": "[Cocaine abuse]",
+      "Annotation": "[Cocaine abuse]"
+    },
+    {
+      "Name": "Other drug use negated",
+      "Definition": "Patient does not use non-opioid addictive substances.",
+      "SampleData": "[Denies tobacco, EtOH, IVDU].",
+      "Annotation": "[Denies tobacco, EtOH, IVDU]"
+    },
+    {
+      "Name": "Other drug use past",
+      "Definition": "Past use of non-opioid addictive substances.",
+      "SampleData": "Former [heavy alcohol use].",
+      "Annotation": "[heavy alcohol use]"
+    },
+    {
+      "Name": "OUD current",
+      "Definition": "Explicit indication of current opioid use disorder.",
+      "SampleData": "[Heroin addiction]",
+      "Annotation": "[Heroin addiction]"
+    },
+    {
+      "Name": "OUD negated",
+      "Definition": "Statement explicitly indicating absence of opioid use disorder.",
+      "SampleData": "[No history of IVDU or opiate pain med use]",
+      "Annotation": "[No history of IVDU or opiate pain med use]"
+    },
+    {
+      "Name": "OUD past",
+      "Definition": "Indication of a past opioid use disorder.",
+      "SampleData": "History of [narcotic dependence].",
+      "Annotation": "[narcotic dependence]"
+    },
+    {
+      "Name": "OUD psychosocial stressors related",
+      "Definition": "Psychosocial or environmental triggers contributing to opioid misuse.",
+      "SampleData": "Brother with [IVDU].",
+      "Annotation": "[IVDU]"
+    },
+    {
+      "Name": "OUD tx",
+      "Definition": "Treatment for opioid use disorder (e.g., methadone, counseling).",
+      "SampleData": "[IVDU on methadone]",
+      "Annotation": "[IVDU on methadone]"
+    },
+    {
+      "Name": "OUD tx negated",
+      "Definition": "Patient refused or is not in treatment for OUD.",
+      "SampleData": "[Offered addictions counseling but refused]",
+      "Annotation": "[Offered addictions counseling but refused]"
+    },
+    {
+      "Name": "Overdose",
+      "Definition": "Overdose due to opioids or other drugs.",
+      "SampleData": "Heroin and cocaine [overdose]",
+      "Annotation": "[overdose]"
+    },
+    {
+      "Name": "Overdose negated",
+      "Definition": "Statement indicating no overdose occurred.",
+      "SampleData": "[Not consistent with a narcotic overdose]",
+      "Annotation": "[Not consistent with a narcotic overdose]"
+    },
+    {
+      "Name": "Overdose past",
+      "Definition": "History of overdose incidents.",
+      "SampleData": "Hospitalized for [7 medication overdoses]",
+      "Annotation": "[7 medication overdoses]"
+    },
+    {
+      "Name": "Overdose uncertain",
+      "Definition": "Overdose suspected but not confirmed.",
+      "SampleData": "Did not respond to [Narcan in the ED]",
+      "Annotation": "[Narcan in the ED]"
+    },
+    {
+      "Name": "Pain",
+      "Definition": "Any mention of physical pain.",
+      "SampleData": "[Chronic back pain]",
+      "Annotation": "[Chronic back pain]"
+    },
+    {
+      "Name": "Pain mgmt",
+      "Definition": "Statements regarding pain management or opioid prescription use.",
+      "SampleData": "[Oxycodone 5 mg Q4H as needed for breakthrough pain]",
+      "Annotation": "[Oxycodone 5 mg Q4H as needed for breakthrough pain]"
+    },
+    {
+      "Name": "Patient-level OUD assertion",
+      "Definition": "Sentence or summary-level assertion about the presence or absence of OUD.",
+      "SampleData": "Clinical writer-assigned OUD: [positive]",
+      "Annotation": "[positive]"
+    },
+    {
+      "Name": "Psychiatric",
+      "Definition": "Current mental health condition documented in clinical note.",
+      "SampleData": "[Suicidal ideations]",
+      "Annotation": "[Suicidal ideations]"
+    },
+    {
+      "Name": "Psychiatric negated",
+      "Definition": "Negation of a mental health condition.",
+      "SampleData": "[Denies feeling depressed]",
+      "Annotation": "[Denies feeling depressed]"
+    },
+    {
+      "Name": "Psychiatric past",
+      "Definition": "History of mental health condition.",
+      "SampleData": "History of [anxiety]",
+      "Annotation": "[anxiety]"
+    },
+    {
+      "Name": "Psychiatric uncertain",
+      "Definition": "Mental health condition mentioned with uncertainty.",
+      "SampleData": "Psychiatry [questioned the patient’s diagnoses]",
+      "Annotation": "[questioned the patient’s diagnoses]"
+    },
+    {
+      "Name": "Vocational interferences",
+      "Definition": "Opioid-related issues affecting employment or education.",
+      "SampleData": "[She was a nurse but lost her license secondary to substance abuse]",
+      "Annotation": "[lost her license secondary to substance abuse]"
+    }
+  ],
+  "Dataset": {
+    "Name": "MIMIC-III Opioid Use Disorder Annotation Corpus",
+    "Description": "Annotated dataset of 3,270 spans across 137 discharge summaries for 100 patients in MIMIC-III with ICD-9 opioid use codes."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations were sentence-based for most classes and phrase-based for opioid type. Dual annotator adjudication was performed for the first 40 patients, and single annotator review for the remaining 60. Each annotation includes class labels and optional attributes (e.g., type, result).",
+    "Link": "https://physionet.org/content/annotation-opioid-use-notes/1.0.0/"
+  }
+}

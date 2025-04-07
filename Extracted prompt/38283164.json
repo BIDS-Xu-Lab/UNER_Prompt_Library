@@ -1,0 +1,47 @@
+{
+  "Entities": [
+    {
+      "Name": "Problem",
+      "Definition": "Clinical conditions or diagnoses that a patient may have or be screened for.",
+      "SampleData": ["allergy", "Alzheimer’s disease", "mild cognitive impairment"]
+    },
+    {
+      "Name": "Medication",
+      "Definition": "Any drug or therapeutic treatment prescribed or used by the patient.",
+      "SampleData": ["BACE inhibitors"]
+    },
+    {
+      "Name": "Lab",
+      "Definition": "Laboratory test names or lab-related measurements.",
+      "SampleData": ["glucose level", "serum creatinine"]
+    },
+    {
+      "Name": "Rating Criteria",
+      "Definition": "Clinical rating scores used for cognitive or physical assessment.",
+      "SampleData": ["MMSE score", "CDR", "ADAS-Cog"]
+    },
+    {
+      "Name": "Social Determinant Health",
+      "Definition": "Social or behavioral context influencing patient eligibility.",
+      "SampleData": ["language literacy", "access to technology", "smoking"]
+    },
+    {
+      "Name": "Procedure",
+      "Definition": "Medical or surgical interventions or tests performed on a patient.",
+      "SampleData": ["CT", "MRI", "PET"]
+    },
+    {
+      "Name": "Fertilize",
+      "Definition": "Mentions related to fertility, reproduction, or contraception status.",
+      "SampleData": ["contraceptive use", "pregnancy", "fertility treatment"]
+    }
+  ],
+  "Dataset": {
+    "Name": "AD Clinical Trial Eligibility Criteria (ClinicalTrials.gov)",
+    "Description": "A manually annotated dataset of eligibility criteria text from 300 Alzheimer’s disease clinical trials, used for developing and evaluating a pipeline for NER and NEN."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Entities were annotated using the CLAMP toolkit and a CRF-based model trained on preprocessed eligibility criteria. Entity normalization used SapBERT embeddings with custom exact and partial match rules, and a specialized negation-prefix detection system.",
+    "Link": "https://doi.org/10.1109/ichi57859.2023.00100"
+  }
+}

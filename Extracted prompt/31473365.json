@@ -1,0 +1,62 @@
+{
+  "Entities": [
+    {
+      "Name": "Patient",
+      "Definition": "Represents the person receiving care. Includes attributes like age, gender, marital status.",
+      "SampleData": ["45 years old", "female", "Married"]
+    },
+    {
+      "Name": "Diagnosis",
+      "Definition": "Conditions or diseases diagnosed by the physician.",
+      "SampleData": ["pneumonia", "toxemia", "bronchiectasis"]
+    },
+    {
+      "Name": "Findings",
+      "Definition": "Clinical findings including symptoms, vital signs, allergies, immunizations, and social history.",
+      "SampleData": ["Tachycardia", "NAD", "rhonchi", "Wheezing", "Dyspnea", "Penicillin", "Influenza", "Smoker"]
+    },
+    {
+      "Name": "Medications",
+      "Definition": "Pharmacological treatments including drug names and dosage forms.",
+      "SampleData": ["Crestor", "Tritace", "Tablet", "syrup"]
+    },
+    {
+      "Name": "DiagnosticTests",
+      "Definition": "Diagnostic assessments including laboratory and radiology procedures.",
+      "SampleData": ["CBC", "INR", "CT", "endoscopy"]
+    },
+    {
+      "Name": "Procedures",
+      "Definition": "Therapeutic or diagnostic actions such as surgeries or biopsies.",
+      "SampleData": ["Breast biopsy", "Hysterectomy"]
+    },
+    {
+      "Name": "Drug Attributes",
+      "Definition": "Details related to drug administration such as dosage, frequency, and timing.",
+      "SampleData": ["600mg", "twice daily", "before meals"]
+    },
+    {
+      "Name": "VitalSigns",
+      "Definition": "Measurements related to physical health such as temperature and blood pressure.",
+      "SampleData": ["36.5C", "120/80", "50 kgs."]
+    },
+    {
+      "Name": "History",
+      "Definition": "Historical data including condition onset or previous illnesses.",
+      "SampleData": ["2 weeks ago", "few days ago", "Heavy smoker"]
+    },
+    {
+      "Name": "Examination",
+      "Definition": "Physical assessment results including body site and condition.",
+      "SampleData": ["Neck", "chest", "Fair", "free"]
+    }
+  ],
+  "Dataset": {
+    "Name": "OB-CIE Clinical Note Corpus",
+    "Description": "150 handwritten clinical documents from five specialties (internal medicine, surgery, gynecology, pulmonology, pediatrics) representing 847 physician notes and 3165 concepts."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Entity recognition was performed using a dictionary built from a domain ontology (PCD) based on SPARQL queries and UMLS mapping. Manual review by domain experts validated concepts and relationships. Attribute values (e.g., '600mg') were also linked to semantic categories like 'Dose'.",
+    "Link": "https://doi.org/10.1016/j.jbi.2019.103276"
+  }
+}

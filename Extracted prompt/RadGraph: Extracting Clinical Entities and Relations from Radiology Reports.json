@@ -1,0 +1,36 @@
+{
+  "Entities": [
+    {
+      "Name": "Anatomy",
+      "Definition": "An anatomical body part mentioned in the radiology report (e.g., lung, heart, diaphragm).",
+      "SampleData": "The heart and [lungs] are normal in size.",
+      "Annotation": "[lungs]"
+    },
+    {
+      "Name": "Observation: Definitely Present",
+      "Definition": "A visual finding or diagnosis clearly affirmed to be present in the image (e.g., effusion, opacity).",
+      "SampleData": "There is a [pleural effusion] in the left lung.",
+      "Annotation": "[pleural effusion]"
+    },
+    {
+      "Name": "Observation: Uncertain",
+      "Definition": "A finding or diagnosis that is possibly or likely present, but uncertain (e.g., may represent pneumonia).",
+      "SampleData": "Findings [may represent pneumonia].",
+      "Annotation": "[may represent pneumonia]"
+    },
+    {
+      "Name": "Observation: Definitely Absent",
+      "Definition": "A finding or diagnosis that is definitively negated or absent (e.g., no edema, without pneumothorax).",
+      "SampleData": "There is [no pneumothorax].",
+      "Annotation": "[no pneumothorax]"
+    }
+  ],
+  "Dataset": {
+    "Name": "RadGraph",
+    "Description": "A dataset of chest X-ray radiology reports annotated for clinical entities and their relations using a novel schema."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Entities are annotated by board-certified radiologists using a schema centered on anatomical structures and observations with certainty levels. Relationships between entities follow directed links: 'Located At', 'Modify', and 'Suggestive Of'. Annotations were performed via the Datasaur.ai platform and confirmed through labeling pilots and quality control.",
+    "Link": "https://doi.org/10.13026/hm87-5p47"
+  }
+}

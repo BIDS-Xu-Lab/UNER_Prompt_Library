@@ -1,0 +1,18 @@
+{
+  "Entities": [
+    {
+      "Name": "Disorder",
+      "Definition": "A span of text that maps to a SNOMED-CT concept within the 'Disorder' UMLS semantic group. This includes terms such as Congenital Abnormality, Disease or Syndrome, Mental or Behavioral Dysfunction, etc.",
+      "SampleData": "Patient found to have [lower extremity DVT].",
+      "Annotation": "[lower extremity DVT]"
+    }
+  ],
+  "Dataset": {
+    "Name": "SemEval-2014 Task 7 Corpus (ShARe v2.5 from MIMIC-II)",
+    "Description": "A corpus of de-identified discharge summaries and radiology/ECG/echo reports from MIMIC-II ICU data. The dataset includes annotations for disorder mentions and mappings to SNOMED-CT CUIs."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Each disorder span must be mapped to a UMLS SNOMED-CT concept where possible. All disorder mentions are annotated, including those referring to someone other than the patient. Discontiguous mentions and abbreviations are also included. Mentions of 'Findings' were excluded to avoid low inter-annotator agreement.",
+    "Link": "http://alt.qcri.org/semeval2014/task7/"
+  }
+}

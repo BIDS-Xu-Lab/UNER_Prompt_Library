@@ -1,0 +1,54 @@
+{
+  "Entities": [
+    {
+      "Name": "NAME",
+      "Definition": "Names of individuals mentioned in the record.",
+      "SampleData": "Dr. [Rayna De Angelis] reviewed the note.",
+      "Annotation": "[Rayna De Angelis]"
+    },
+    {
+      "Name": "PROFESSION",
+      "Definition": "Job titles or professions.",
+      "SampleData": "She is a [nurse] working in the ER.",
+      "Annotation": "[nurse]"
+    },
+    {
+      "Name": "LOCATION",
+      "Definition": "Any geographical or facility location (including hospital, city, room, etc.).",
+      "SampleData": "Transferred to [Brooks Infirmary].",
+      "Annotation": "[Brooks Infirmary]"
+    },
+    {
+      "Name": "AGE",
+      "Definition": "Patient's age or age category.",
+      "SampleData": "The [58-year-old] male presents with chest pain.",
+      "Annotation": "[58-year-old]"
+    },
+    {
+      "Name": "DATE",
+      "Definition": "Full or partial calendar dates.",
+      "SampleData": "Discharge summary dated [04/25/2013].",
+      "Annotation": "[04/25/2013]"
+    },
+    {
+      "Name": "CONTACT",
+      "Definition": "Phone, fax, email, URLs, IP addresses, etc.",
+      "SampleData": "Please call [555-123-4567] for follow-up.",
+      "Annotation": "[555-123-4567]"
+    },
+    {
+      "Name": "ID",
+      "Definition": "Identifiers such as SSN, medical record numbers, health plan IDs, etc.",
+      "SampleData": "Medical record number: [123-45-6789].",
+      "Annotation": "[123-45-6789]"
+    }
+  ],
+  "Dataset": {
+    "Name": "2014 i2b2/UTHealth De-identification Corpus",
+    "Description": "Consists of 1,304 medical records from 296 diabetic patients, with annotations covering expanded i2b2-PHI and HIPAA-PHI categories."
+  },
+  "AnnotationGuidelines": {
+    "Description": "Annotations include standard HIPAA categories and additional PHI types like professions and full dates. Each PHI instance was manually annotated twice and replaced with realistic surrogates. Evaluations were conducted at entity, token, and binary levels. Evaluation scripts are available on GitHub.",
+    "Link": "https://github.com/kotfic/i2b2_evaluation_scripts/tree/v1.2.1"
+  }
+}
