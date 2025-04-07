@@ -1,0 +1,18 @@
+**Table 1. Summary of collected articles categorized by disease focused**
+| Disease Category                | Included Diseases | Included Clinical Note Type | Included Entities | Number of Papers |
+|---------------------------------|-------------------|-----------------------------|-------------------|------------------|
+| Neurological Diseases           | Subdural hematoma 1 (SDH), Acute Stroke2, Stroke3, Brain Injuries4, Alzheimer's Disease5 | Clinical Letters, Radiology Reports, Clinical trial notes | Stroke Attributes, Brain Injury Characteristics, Alzheimer's Disease Factors, Clinical and Diagnostic Parameters | 5 |
+| Cardiovascular Diseases         | Heart Disease6-9, Cardiac Function10, Peripheral Arterial Disease11 | Clinical Reports, Discharge Documents, Radiology Notes, CT reports | Cardiovascular Risk Factors, ARDS Treatment and Management, PAD Status, Cardiac Function Measures | 6 |
+| Cancers                         | Lung Cancer12, Melanoma13, Breast Cancer14, 15, Prostate Cancer16, Liver cancer17-19, Metastatic Disease20, Gastroesophageal cancer21, Mutli-cancer22, General cancer23, 24 | Pathology reports, Drug Notes, Electronic Health Records (EHR), Radiology Reports, Operation Notes | Cancer Type and Location, Diagnostic and Prognostic Markers, Treatment and Genetic Information, Metastasis and Histological Details | 13 |
+| Respiratory Diseases            | Acute Respiratory Distress Syndrome (ARDS)25, Pulmonary nodules26 | CT reports, Discharge documents | Pulmonary Nodule, ARDS, Mechanical Ventilation, ICU Admission, PICS Symptoms | 2 |
+| Substance-Related Disorders     | Substance use27-29, Smoking status30 | Clinical Reports, Medical discharge records | Alcohol Use, Drug Use, Nicotine Use, Smoking Status, Non-Smoker, Current Smoker, Unknown | 4 |
+| Injuries and Related Conditions | Bone Fractures31, Wound Information32, Fall-related information33 | Radiology Reports, Clinical Notes | Fracture Specifics, Wound Care Attributes, Fall Prevention Measures | 3 |
+| Social and Economic Issues      | Social Determinants of Health (SDoH)34, 35 | Clinical Notes, Social history sections | Alcohol, Drug, Tobacco, Employment, Living Status, Substance Use, Employment, Living Status | 2 |
+| Blood and Circulatory System Disorders | Venous thromboembolisms (VTE)36, Bleeding events37 | Narrative radiology reports, EHR | Thrombosis and Pulmonary Embolism Details, Bleeding Event Characteristics | 2 |
+| Eye Diseases                    | Diabetic Retinopathy38, Glaucoma39, 40 | Radiological Reports, Clinical Progress Notes, Ophthalmology Notes | Eye Disease Indicators, Treatment and Medication Adherence | 3 |
+| Infectious Diseases             | COVID-1941, Invasive fungal infection42, 43 | Radiological Reports | COVID-19 diagnostics and symptoms, infection, infection risk factors, abnormalities | 3 |
+| Radiation and Related Treatments | Radiation Therapy51 | Clinical Texts | Radiation Therapy Parameters | 1 |
+| Other Specific Conditions       | Preterm birth risk44, Craniofacial and oral phenotypes45, Colonoscopy46, 47, Thyroid Nodules48, Geriatric syndromes49, Cartilage diseases50 | Medical notes, Clinical narratives, Colonoscopy Reports, Radiology Reports, Electronic Medical Records, Knee MRI | Pregnancy Risks, Craniofacial and Oral Health, Colonoscopy Results, Thyroid and Cartilage Condition Details, Geriatric Syndromes | 7 |
+| Others                          | General52-70 | Clinical Reports, Radiology Reports, HER, Hospital Discharge Summaries, Operative Notes, Radiology Reports, EHR, Physician’s free-text notes | Identifications, Disorder, Medicine related, Observation uncertainty, Problems, Treatments, Tests, Drugs | 19 |
+
+**References**
